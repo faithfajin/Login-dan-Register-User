@@ -1,5 +1,5 @@
 ﻿using Login_dan_Register_Project_PBO_A;
-
+using Npgsql;
 namespace DesktopApp
 {
     public partial class Formlogin : Form
@@ -8,6 +8,8 @@ namespace DesktopApp
         {
             InitializeComponent();
         }
+
+        string CnS = "Host=localhost:5432;Username=postgres;Password=010304;Database=postgres";
 
         private void Formlogin_Load(object sender, EventArgs e)
         {
@@ -32,23 +34,35 @@ namespace DesktopApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "Admin" & txtPassword.Text == "123")
+            using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
             {
-                new dashboard().Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Username atau Password salah, Silahkan coba lagi", "Login Gagal", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-            }
-        }
+                connection.Open();
+                {
+                    if (txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
+                    {
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            txtUsername.Text = "";
-            txtPassword.Text = "";
+                        NpgsqlCommand command = new NpgsqlCommand("select * from data_user where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
+                        NpgsqlDataReader dr = command.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            MessageBox.Show("Selemat datang ", "login berhasil");
+                            dashboard form2 = new dashboard();
+                            form2.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            dr.Close();
+                            MessageBox.Show("Silahkan periksa kembali username and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Silahkan isi username dan password.", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
 
         private void checkBoxTampilkanPassword_CheckedChanged(object sender, EventArgs e)
@@ -61,6 +75,12 @@ namespace DesktopApp
             {
                 txtPassword.PasswordChar = '*';
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            new FormForgetPassword().Show();
+            this.Hide();
         }
     }
 }
