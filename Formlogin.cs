@@ -41,7 +41,7 @@ namespace DesktopApp
                     if (txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
                     {
 
-                        NpgsqlCommand command = new NpgsqlCommand("select * from data_user where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
+                        NpgsqlCommand command = new NpgsqlCommand("select * from data_user where username_pilihan='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
                         NpgsqlDataReader dr = command.ExecuteReader();
                         if (dr.Read())
                         {
