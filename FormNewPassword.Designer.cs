@@ -42,6 +42,7 @@
             // 
             // checkBoxTampilkanPassword
             // 
+            checkBoxTampilkanPassword.Anchor = AnchorStyles.None;
             checkBoxTampilkanPassword.AutoSize = true;
             checkBoxTampilkanPassword.Cursor = Cursors.Hand;
             checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
@@ -55,6 +56,7 @@
             // 
             // txtpassword2
             // 
+            txtpassword2.Anchor = AnchorStyles.None;
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
             txtpassword2.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -67,6 +69,7 @@
             // 
             // textKonfirmasiPassowrd
             // 
+            textKonfirmasiPassowrd.Anchor = AnchorStyles.None;
             textKonfirmasiPassowrd.AutoSize = true;
             textKonfirmasiPassowrd.Location = new Point(386, 288);
             textKonfirmasiPassowrd.Name = "textKonfirmasiPassowrd";
@@ -76,6 +79,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.Anchor = AnchorStyles.None;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -88,6 +92,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Location = new Point(387, 233);
             label3.Name = "label3";
@@ -97,6 +102,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.ImageLocation = "";
             pictureBox1.Location = new Point(485, 106);
@@ -108,6 +114,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
@@ -119,6 +126,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -148,10 +156,10 @@
             Controls.Add(label3);
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(164, 165, 169);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormNewPassword";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormNewPassword";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

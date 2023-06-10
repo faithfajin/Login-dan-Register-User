@@ -38,5 +38,10 @@ namespace Login_dan_Register_Project_PBO_A
         {
 
         }
+
+        private void FromCodeVerifikasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

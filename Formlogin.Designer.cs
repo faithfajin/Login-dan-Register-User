@@ -46,6 +46,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.ForeColor = Color.FromArgb(164, 165, 169);
             label4.Location = new Point(430, 471);
@@ -56,6 +57,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -71,6 +73,7 @@
             // 
             // checkBoxTampilkanPassword
             // 
+            checkBoxTampilkanPassword.Anchor = AnchorStyles.None;
             checkBoxTampilkanPassword.AutoSize = true;
             checkBoxTampilkanPassword.Cursor = Cursors.Hand;
             checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
@@ -85,6 +88,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.Anchor = AnchorStyles.None;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -97,6 +101,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.ForeColor = Color.FromArgb(164, 165, 169);
             label3.Location = new Point(393, 292);
@@ -107,6 +112,7 @@
             // 
             // txtUsername
             // 
+            txtUsername.Anchor = AnchorStyles.None;
             txtUsername.BackColor = Color.FromArgb(230, 231, 233);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -119,6 +125,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(393, 227);
@@ -129,6 +136,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
@@ -141,6 +149,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.ImageLocation = "";
             pictureBox1.Location = new Point(490, 68);
@@ -152,6 +161,7 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Font = new Font("Nirmala UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(164, 165, 169);
@@ -163,6 +173,7 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
@@ -176,6 +187,7 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.Cursor = Cursors.Hand;
             label7.FlatStyle = FlatStyle.Flat;
@@ -206,10 +218,10 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Formlogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Formlogin";
+            WindowState = FormWindowState.Maximized;
             Load += Formlogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

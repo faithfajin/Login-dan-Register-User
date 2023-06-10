@@ -53,6 +53,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.Anchor = AnchorStyles.None;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -66,6 +67,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Location = new Point(392, 277);
             label3.Name = "label3";
@@ -76,6 +78,7 @@
             // 
             // txtpassword2
             // 
+            txtpassword2.Anchor = AnchorStyles.None;
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
             txtpassword2.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -89,6 +92,7 @@
             // 
             // textKonfirmasiPassowrd
             // 
+            textKonfirmasiPassowrd.Anchor = AnchorStyles.None;
             textKonfirmasiPassowrd.AutoSize = true;
             textKonfirmasiPassowrd.Location = new Point(392, 326);
             textKonfirmasiPassowrd.Name = "textKonfirmasiPassowrd";
@@ -99,6 +103,7 @@
             // 
             // checkBoxTampilkanPassword
             // 
+            checkBoxTampilkanPassword.Anchor = AnchorStyles.None;
             checkBoxTampilkanPassword.AutoSize = true;
             checkBoxTampilkanPassword.Cursor = Cursors.Hand;
             checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
@@ -112,6 +117,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -127,6 +133,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(448, 562);
@@ -137,6 +144,7 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
@@ -150,6 +158,7 @@
             // 
             // txtNama
             // 
+            txtNama.Anchor = AnchorStyles.None;
             txtNama.BackColor = Color.FromArgb(230, 231, 233);
             txtNama.BorderStyle = BorderStyle.None;
             txtNama.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -161,6 +170,7 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.Location = new Point(389, 72);
             label7.Name = "label7";
@@ -171,6 +181,7 @@
             // 
             // txtEmail
             // 
+            txtEmail.Anchor = AnchorStyles.None;
             txtEmail.BackColor = Color.FromArgb(230, 231, 233);
             txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -182,6 +193,7 @@
             // 
             // label8
             // 
+            label8.Anchor = AnchorStyles.None;
             label8.AutoSize = true;
             label8.Location = new Point(392, 174);
             label8.Name = "label8";
@@ -192,6 +204,7 @@
             // 
             // txtNo
             // 
+            txtNo.Anchor = AnchorStyles.None;
             txtNo.BackColor = Color.FromArgb(230, 231, 233);
             txtNo.BorderStyle = BorderStyle.None;
             txtNo.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -203,6 +216,7 @@
             // 
             // label9
             // 
+            label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.Location = new Point(392, 226);
             label9.Name = "label9";
@@ -212,6 +226,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Location = new Point(393, 398);
             label2.Name = "label2";
@@ -222,6 +237,7 @@
             // 
             // label10
             // 
+            label10.Anchor = AnchorStyles.None;
             label10.AutoSize = true;
             label10.Location = new Point(393, 449);
             label10.Name = "label10";
@@ -231,6 +247,7 @@
             // 
             // txtProvinsi
             // 
+            txtProvinsi.Anchor = AnchorStyles.None;
             txtProvinsi.BackColor = Color.FromArgb(230, 231, 233);
             txtProvinsi.BorderStyle = BorderStyle.None;
             txtProvinsi.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -242,6 +259,7 @@
             // 
             // txtKota
             // 
+            txtKota.Anchor = AnchorStyles.None;
             txtKota.BackColor = Color.FromArgb(230, 231, 233);
             txtKota.BorderStyle = BorderStyle.None;
             txtKota.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -253,6 +271,7 @@
             // 
             // label11
             // 
+            label11.Anchor = AnchorStyles.None;
             label11.AutoSize = true;
             label11.Font = new Font("Nirmala UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.FromArgb(55, 163, 165);
@@ -264,6 +283,7 @@
             // 
             // LabelUsername
             // 
+            LabelUsername.Anchor = AnchorStyles.None;
             LabelUsername.AutoSize = true;
             LabelUsername.Location = new Point(392, 123);
             LabelUsername.Name = "LabelUsername";
@@ -273,6 +293,7 @@
             // 
             // txtUsernamepilihan
             // 
+            txtUsernamepilihan.Anchor = AnchorStyles.None;
             txtUsernamepilihan.BackColor = Color.FromArgb(230, 231, 233);
             txtUsernamepilihan.BorderStyle = BorderStyle.None;
             txtUsernamepilihan.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -312,10 +333,10 @@
             Controls.Add(label3);
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(164, 165, 169);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormRegister";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "JT-App";
+            WindowState = FormWindowState.Maximized;
             Load += FormRegister_Load;
             ResumeLayout(false);
             PerformLayout();
