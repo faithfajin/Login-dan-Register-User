@@ -57,7 +57,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(387, 311);
             button1.Name = "button1";
