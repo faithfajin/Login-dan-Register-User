@@ -56,7 +56,7 @@
             txtPassword.Anchor = AnchorStyles.None;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
-            txtPassword.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtPassword.Location = new Point(390, 296);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
@@ -69,9 +69,10 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
+            label3.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(392, 277);
             label3.Name = "label3";
-            label3.Size = new Size(66, 17);
+            label3.Size = new Size(75, 23);
             label3.TabIndex = 3;
             label3.Text = "Password";
             label3.Click += label3_Click;
@@ -81,7 +82,7 @@
             txtpassword2.Anchor = AnchorStyles.None;
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
-            txtpassword2.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtpassword2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtpassword2.Location = new Point(390, 346);
             txtpassword2.Multiline = true;
             txtpassword2.Name = "txtpassword2";
@@ -94,9 +95,10 @@
             // 
             textKonfirmasiPassowrd.Anchor = AnchorStyles.None;
             textKonfirmasiPassowrd.AutoSize = true;
+            textKonfirmasiPassowrd.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             textKonfirmasiPassowrd.Location = new Point(392, 326);
             textKonfirmasiPassowrd.Name = "textKonfirmasiPassowrd";
-            textKonfirmasiPassowrd.Size = new Size(137, 17);
+            textKonfirmasiPassowrd.Size = new Size(153, 23);
             textKonfirmasiPassowrd.TabIndex = 5;
             textKonfirmasiPassowrd.Text = "Konfirmasi Password";
             textKonfirmasiPassowrd.Click += textKonfirmasiPassowrd_Click;
@@ -107,9 +109,10 @@
             checkBoxTampilkanPassword.AutoSize = true;
             checkBoxTampilkanPassword.Cursor = Cursors.Hand;
             checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
+            checkBoxTampilkanPassword.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             checkBoxTampilkanPassword.Location = new Point(537, 379);
             checkBoxTampilkanPassword.Name = "checkBoxTampilkanPassword";
-            checkBoxTampilkanPassword.Size = new Size(150, 21);
+            checkBoxTampilkanPassword.Size = new Size(168, 27);
             checkBoxTampilkanPassword.TabIndex = 7;
             checkBoxTampilkanPassword.Text = "Tampilkan Password";
             checkBoxTampilkanPassword.UseVisualStyleBackColor = true;
@@ -122,6 +125,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(390, 515);
             button1.Name = "button1";
@@ -135,10 +139,10 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
-            label4.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(448, 562);
             label4.Name = "label4";
-            label4.Size = new Size(146, 17);
+            label4.Size = new Size(147, 22);
             label4.TabIndex = 10;
             label4.Text = "Sudah Memiliki Akun?";
             // 
@@ -148,10 +152,11 @@
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
+            label5.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(55, 163, 165);
             label5.Location = new Point(593, 562);
             label5.Name = "label5";
-            label5.Size = new Size(48, 17);
+            label5.Size = new Size(47, 22);
             label5.TabIndex = 11;
             label5.Text = "LOGIN";
             label5.Click += label5_Click;
@@ -161,7 +166,7 @@
             txtNama.Anchor = AnchorStyles.None;
             txtNama.BackColor = Color.FromArgb(230, 231, 233);
             txtNama.BorderStyle = BorderStyle.None;
-            txtNama.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNama.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNama.Location = new Point(390, 92);
             txtNama.Multiline = true;
             txtNama.Name = "txtNama";
@@ -172,9 +177,10 @@
             // 
             label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
+            label7.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label7.Location = new Point(389, 72);
             label7.Name = "label7";
-            label7.Size = new Size(100, 17);
+            label7.Size = new Size(113, 23);
             label7.TabIndex = 13;
             label7.Text = "Nama Lengkap";
             label7.Click += label7_Click;
@@ -184,7 +190,7 @@
             txtEmail.Anchor = AnchorStyles.None;
             txtEmail.BackColor = Color.FromArgb(230, 231, 233);
             txtEmail.BorderStyle = BorderStyle.None;
-            txtEmail.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtEmail.Location = new Point(390, 194);
             txtEmail.Multiline = true;
             txtEmail.Name = "txtEmail";
@@ -195,9 +201,10 @@
             // 
             label8.Anchor = AnchorStyles.None;
             label8.AutoSize = true;
+            label8.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(392, 174);
             label8.Name = "label8";
-            label8.Size = new Size(42, 17);
+            label8.Size = new Size(48, 23);
             label8.TabIndex = 15;
             label8.Text = "Email";
             label8.Click += label8_Click;
@@ -207,7 +214,7 @@
             txtNo.Anchor = AnchorStyles.None;
             txtNo.BackColor = Color.FromArgb(230, 231, 233);
             txtNo.BorderStyle = BorderStyle.None;
-            txtNo.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNo.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNo.Location = new Point(390, 246);
             txtNo.Multiline = true;
             txtNo.Name = "txtNo";
@@ -218,9 +225,10 @@
             // 
             label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
+            label9.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label9.Location = new Point(392, 226);
             label9.Name = "label9";
-            label9.Size = new Size(48, 17);
+            label9.Size = new Size(50, 23);
             label9.TabIndex = 17;
             label9.Text = "No Hp";
             // 
@@ -228,9 +236,10 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
+            label2.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(393, 398);
             label2.Name = "label2";
-            label2.Size = new Size(58, 17);
+            label2.Size = new Size(64, 23);
             label2.TabIndex = 19;
             label2.Text = "Provinsi";
             label2.Click += label2_Click;
@@ -239,9 +248,10 @@
             // 
             label10.Anchor = AnchorStyles.None;
             label10.AutoSize = true;
+            label10.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label10.Location = new Point(393, 449);
             label10.Name = "label10";
-            label10.Size = new Size(36, 17);
+            label10.Size = new Size(41, 23);
             label10.TabIndex = 21;
             label10.Text = "Kota";
             // 
@@ -250,7 +260,7 @@
             txtProvinsi.Anchor = AnchorStyles.None;
             txtProvinsi.BackColor = Color.FromArgb(230, 231, 233);
             txtProvinsi.BorderStyle = BorderStyle.None;
-            txtProvinsi.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtProvinsi.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtProvinsi.Location = new Point(390, 418);
             txtProvinsi.Multiline = true;
             txtProvinsi.Name = "txtProvinsi";
@@ -262,7 +272,7 @@
             txtKota.Anchor = AnchorStyles.None;
             txtKota.BackColor = Color.FromArgb(230, 231, 233);
             txtKota.BorderStyle = BorderStyle.None;
-            txtKota.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtKota.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtKota.Location = new Point(390, 469);
             txtKota.Multiline = true;
             txtKota.Name = "txtKota";
@@ -273,11 +283,11 @@
             // 
             label11.Anchor = AnchorStyles.None;
             label11.AutoSize = true;
-            label11.Font = new Font("Nirmala UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Font = new Font("Poppins", 23.25F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.FromArgb(55, 163, 165);
             label11.Location = new Point(379, 22);
             label11.Name = "label11";
-            label11.Size = new Size(177, 45);
+            label11.Size = new Size(189, 54);
             label11.TabIndex = 28;
             label11.Text = "Buat Akun";
             // 
@@ -285,9 +295,10 @@
             // 
             LabelUsername.Anchor = AnchorStyles.None;
             LabelUsername.AutoSize = true;
+            LabelUsername.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             LabelUsername.Location = new Point(392, 123);
             LabelUsername.Name = "LabelUsername";
-            LabelUsername.Size = new Size(69, 17);
+            LabelUsername.Size = new Size(80, 23);
             LabelUsername.TabIndex = 29;
             LabelUsername.Text = "Username";
             // 
@@ -296,7 +307,7 @@
             txtUsernamepilihan.Anchor = AnchorStyles.None;
             txtUsernamepilihan.BackColor = Color.FromArgb(230, 231, 233);
             txtUsernamepilihan.BorderStyle = BorderStyle.None;
-            txtUsernamepilihan.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsernamepilihan.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtUsernamepilihan.Location = new Point(387, 143);
             txtUsernamepilihan.Multiline = true;
             txtUsernamepilihan.Name = "txtUsernamepilihan";

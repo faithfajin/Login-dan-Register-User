@@ -10,7 +10,6 @@ namespace DesktopApp
         }
 
         private int userId; // Variabel untuk menyimpan ID pengguna
-
         string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
         string selectQuery = "SELECT id FROM table_user WHERE username = @username AND password = @password";
         private void Formlogin_Load(object sender, EventArgs e)
@@ -128,7 +127,7 @@ namespace DesktopApp
 
         private void label7_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             new FormForgetPassword().Show();
         }
     }

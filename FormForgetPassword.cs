@@ -50,5 +50,10 @@ namespace Login_dan_Register_Project_PBO_A
             this.Close();
             new Formlogin().Show();
         }
+
+        private void FormForgetPassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

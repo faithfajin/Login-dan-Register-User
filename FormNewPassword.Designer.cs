@@ -46,9 +46,10 @@
             checkBoxTampilkanPassword.AutoSize = true;
             checkBoxTampilkanPassword.Cursor = Cursors.Hand;
             checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
-            checkBoxTampilkanPassword.Location = new Point(537, 346);
+            checkBoxTampilkanPassword.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxTampilkanPassword.Location = new Point(530, 346);
             checkBoxTampilkanPassword.Name = "checkBoxTampilkanPassword";
-            checkBoxTampilkanPassword.Size = new Size(150, 21);
+            checkBoxTampilkanPassword.Size = new Size(168, 27);
             checkBoxTampilkanPassword.TabIndex = 12;
             checkBoxTampilkanPassword.Text = "Tampilkan Password";
             checkBoxTampilkanPassword.UseVisualStyleBackColor = true;
@@ -71,9 +72,10 @@
             // 
             textKonfirmasiPassowrd.Anchor = AnchorStyles.None;
             textKonfirmasiPassowrd.AutoSize = true;
+            textKonfirmasiPassowrd.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             textKonfirmasiPassowrd.Location = new Point(386, 288);
             textKonfirmasiPassowrd.Name = "textKonfirmasiPassowrd";
-            textKonfirmasiPassowrd.Size = new Size(137, 17);
+            textKonfirmasiPassowrd.Size = new Size(153, 23);
             textKonfirmasiPassowrd.TabIndex = 10;
             textKonfirmasiPassowrd.Text = "Konfirmasi Password";
             // 
@@ -94,9 +96,10 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
+            label3.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(387, 233);
             label3.Name = "label3";
-            label3.Size = new Size(97, 17);
+            label3.Size = new Size(107, 23);
             label3.TabIndex = 8;
             label3.Text = "New Password";
             // 
@@ -116,11 +119,11 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Poppins", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
-            label1.Location = new Point(457, 197);
+            label1.Location = new Point(447, 197);
             label1.Name = "label1";
-            label1.Size = new Size(156, 30);
+            label1.Size = new Size(173, 37);
             label1.TabIndex = 47;
             label1.Text = "New Password";
             // 
@@ -131,8 +134,9 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(390, 369);
+            button1.Location = new Point(390, 375);
             button1.Name = "button1";
             button1.Size = new Size(300, 38);
             button1.TabIndex = 49;
