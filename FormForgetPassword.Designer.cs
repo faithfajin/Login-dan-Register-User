@@ -64,7 +64,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(73, 186, 109);
+            button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
@@ -102,7 +102,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(73, 186, 109);
+            label1.ForeColor = Color.FromArgb(55, 163, 165);
             label1.Location = new Point(454, 181);
             label1.Name = "label1";
             label1.Size = new Size(177, 30);
@@ -126,7 +126,7 @@
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(73, 186, 109);
+            label5.ForeColor = Color.FromArgb(55, 163, 165);
             label5.Location = new Point(496, 397);
             label5.Name = "label5";
             label5.Size = new Size(89, 17);
