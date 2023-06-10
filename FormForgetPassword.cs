@@ -27,8 +27,8 @@ namespace Login_dan_Register_Project_PBO_A
                         {
                             MessageBox.Show("Silahkan cek email anda ", "Kode verifikasi terkirim");
                             FromCodeVerifikasi form2 = new FromCodeVerifikasi();
+                            this.Close();
                             form2.Show();
-                            this.Hide();
                         }
                         else
                         {
@@ -47,8 +47,8 @@ namespace Login_dan_Register_Project_PBO_A
 
         private void label5_Click(object sender, EventArgs e)
         {
+            this.Close();
             new Formlogin().Show();
-            this.Hide();
         }
     }
 }

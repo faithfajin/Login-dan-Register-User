@@ -228,8 +228,8 @@ namespace DesktopApp
                             txtKota.Text = "";
                             txtProvinsi.Text = "";
                             txtUsernamepilihan.Text = "";
+                            this.Close();
                             new Formlogin().Show();
-                            this.Hide();
                         }
                         else
                         {

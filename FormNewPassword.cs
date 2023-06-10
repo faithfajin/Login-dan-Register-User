@@ -27,8 +27,8 @@ namespace Login_dan_Register_Project_PBO_A
         {
             if (txtPassword.Text == txtpassword2.Text)
             {
+                this.Close();
                 new Formlogin().Show();
-                this.Hide();
                 MessageBox.Show("Password telah direset", "Reset password berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

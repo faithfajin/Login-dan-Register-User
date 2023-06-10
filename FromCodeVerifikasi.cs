@@ -1,15 +1,4 @@
-﻿using DesktopApp;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Login_dan_Register_Project_PBO_A
+﻿namespace Login_dan_Register_Project_PBO_A
 {
     public partial class FromCodeVerifikasi : Form
     {
@@ -22,8 +11,8 @@ namespace Login_dan_Register_Project_PBO_A
         {
             if (txtCode.Text == "010304")
             {
+                this.Close();
                 new FormNewPassword().Show();
-                this.Hide();
                 MessageBox.Show("Kode benar", "Verifikasi berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
