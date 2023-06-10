@@ -128,8 +128,8 @@ namespace DesktopApp
 
         private void label7_Click(object sender, EventArgs e)
         {
+            this.Close();
             new FormForgetPassword().Show();
-            this.Hide();
         }
     }
 }
