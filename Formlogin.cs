@@ -41,24 +41,24 @@ namespace DesktopApp
                 connection.Open();
                 using (NpgsqlCommand command = new NpgsqlCommand(selectQuery, connection))
                 {
-                    // Get values from TextBoxes
+                    // Get values 
                     string username = txtUsername.Text;
                     string password = txtPassword.Text;
 
-                    // Check for empty input
+                    // ngecek empty input
                     if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
                     {
                         MessageBox.Show("Please enter a username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
-                    // Set parameter values
+                    // ngeset parameter values
                     command.Parameters.AddWithValue("username", username);
                     command.Parameters.AddWithValue("password", password);
 
                     try
                     {
-                        // Execute the query
+                        // eksekuasi query
                         object result = command.ExecuteScalar();
 
                         if (result != null)
@@ -69,11 +69,9 @@ namespace DesktopApp
                             // Clear TextBoxes
                             txtUsername.Text = "";
                             txtPassword.Text = "";
-                            dashboard form2 = new dashboard();
-                            form2.Show();
                             this.Hide();
+                            new dashboard().Show();
 
-                            // Continue with the rest of your code or perform actions for logged-in user
                         }
                         else
                         {
