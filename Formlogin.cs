@@ -25,8 +25,8 @@ namespace DesktopApp
 
         private void label5_Click(object sender, EventArgs e)
         {
-            new FormRegister().Show();
             this.Hide();
+            new FormRegister().Show();
         }
 
         private void textusername_TextChanged(object sender, EventArgs e)

@@ -47,8 +47,8 @@ namespace DesktopApp
 
         private void label5_Click(object sender, EventArgs e)
         {
+            this.Close();
             new Formlogin().Show();
-            this.Hide();
         }
 
         private void label8_Click(object sender, EventArgs e)
