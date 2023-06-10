@@ -10,7 +10,7 @@ namespace Login_dan_Register_Project_PBO_A
             InitializeComponent();
         }
 
-        string CnS = "Host=localhost:5432;Username=postgres;Password=010304;Database=postgres";
+        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
 
         private void button1_Click(object sender, EventArgs e)
         {

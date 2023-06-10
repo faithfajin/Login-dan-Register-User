@@ -9,8 +9,10 @@ namespace DesktopApp
             InitializeComponent();
         }
 
-        string CnS = "Host=localhost:5432;Username=postgres;Password=010304;Database=postgres";
+        private int userId; // Variabel untuk menyimpan ID pengguna
 
+        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
+        string selectQuery = "SELECT id FROM table_user WHERE username = @username AND password = @password";
         private void Formlogin_Load(object sender, EventArgs e)
         {
 
@@ -37,30 +39,79 @@ namespace DesktopApp
             using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
             {
                 connection.Open();
+                using (NpgsqlCommand command = new NpgsqlCommand(selectQuery, connection))
                 {
-                    if (txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
-                    {
+                    // Get values from TextBoxes
+                    string username = txtUsername.Text;
+                    string password = txtPassword.Text;
 
-                        NpgsqlCommand command = new NpgsqlCommand("select * from data_user where username_pilihan='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
-                        NpgsqlDataReader dr = command.ExecuteReader();
-                        if (dr.Read())
+                    // Check for empty input
+                    if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                    {
+                        MessageBox.Show("Please enter a username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    // Set parameter values
+                    command.Parameters.AddWithValue("username", username);
+                    command.Parameters.AddWithValue("password", password);
+
+                    try
+                    {
+                        // Execute the query
+                        object result = command.ExecuteScalar();
+
+                        if (result != null)
                         {
-                            MessageBox.Show("Selemat datang ", "login berhasil");
+                            userId = Convert.ToInt32(result);
+
+                            MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // Clear TextBoxes
+                            txtUsername.Text = "";
+                            txtPassword.Text = "";
                             dashboard form2 = new dashboard();
                             form2.Show();
                             this.Hide();
+
+                            // Continue with the rest of your code or perform actions for logged-in user
                         }
                         else
                         {
-                            dr.Close();
                             MessageBox.Show("Silahkan periksa kembali username and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-
                     }
-                    else
+                    catch (NpgsqlException ex)
                     {
-                        MessageBox.Show("Silahkan isi username dan password.", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    //if (txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
+                    //{
+
+                    //    NpgsqlCommand command = new NpgsqlCommand("select * from table_user where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
+                    //    NpgsqlDataReader dr = command.ExecuteReader();
+                    //    if (dr.Read())
+                    //    {
+                    //        string getIdQuery = "SELECT lastval()";
+                    //        using (NpgsqlCommand getIdCommand = new NpgsqlCommand(getIdQuery, connection))
+                    //        {
+                    //            userId = Convert.ToInt32(getIdCommand.ExecuteScalar());
+                    //        }
+                    //        MessageBox.Show("Selemat datang ", "login berhasil");
+                    //        dashboard form2 = new dashboard();
+                    //        form2.Show();
+                    //        this.Hide();
+                    //    }
+                    //    else
+                    //    {
+                    //        dr.Close();
+                    //        MessageBox.Show("Silahkan periksa kembali username and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //    }
+
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Silahkan isi username dan password.", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //}
                 }
             }
         }

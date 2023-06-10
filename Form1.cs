@@ -9,11 +9,11 @@ namespace DesktopApp
             InitializeComponent();
         }
 
-        string CnS = "Host=localhost:5432;Username=postgres;Password=010304;Database=postgres";
+        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
 
 
-        string insertQuery = "INSERT INTO data_user (nama_lengkap, email, no_hp, password, kota, provinsi, username_pilihan) " +
-                     "VALUES (@nama_lengkap, @email, @no_hp, @password, @kota, @provinsi, @username_pilihan)";
+        string insertQuery = "INSERT INTO table_user (username, nama_lengkap, email, no_hp, password, kota, provinsi) " +
+                     "VALUES (@username, @nama_lengkap, @email, @no_hp, @password, @kota, @provinsi)";
 
 
 
@@ -155,6 +155,7 @@ namespace DesktopApp
             if (txtpassword2.Text != txtPassword.Text)
             {
                 MessageBox.Show("Password confirmation does not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtpassword2.Text = "";
                 return;
             }
             using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
@@ -170,30 +171,34 @@ namespace DesktopApp
                     string password = txtPassword.Text;
                     string kota = txtKota.Text;
                     string provinsi = txtProvinsi.Text;
-                    string usernamePilihan = txtUsernamepilihan.Text;
+                    string username = txtUsernamepilihan.Text;
 
                     // Check for empty input
                     if (string.IsNullOrEmpty(namaLengkap) || string.IsNullOrEmpty(email) ||
-                        string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(usernamePilihan))
+                        string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(username))
                     {
                         MessageBox.Show("Please enter a value in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
                     // Check if data already exists
-                    string checkQuery = "SELECT COUNT(*) FROM data_user WHERE nama_lengkap = @nama_lengkap OR email = @email OR no_hp = @no_hp " +
-                                        "OR username_pilihan = @username_pilihan";
+                    string checkQuery = "SELECT COUNT(*) FROM table_user WHERE nama_lengkap = @nama_lengkap OR email = @email OR no_hp = @no_hp " +
+                                        "OR username = @username";
                     using (NpgsqlCommand checkCommand = new NpgsqlCommand(checkQuery, connection))
                     {
                         checkCommand.Parameters.AddWithValue("nama_lengkap", namaLengkap);
                         checkCommand.Parameters.AddWithValue("email", email);
-                        checkCommand.Parameters.AddWithValue("username_pilihan", usernamePilihan);
+                        checkCommand.Parameters.AddWithValue("username", username);
                         checkCommand.Parameters.AddWithValue("no_hp", noHp);
 
                         int count = Convert.ToInt32(checkCommand.ExecuteScalar());
                         if (count > 0)
                         {
-                            MessageBox.Show("Data already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Name/Username/Email/Phone number Already exist please try another ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txtNama.Text = "";
+                            txtEmail.Text = "";
+                            txtNo.Text = "";
+                            txtUsernamepilihan.Text = "";
                             return;
                         }
                     }
@@ -205,7 +210,7 @@ namespace DesktopApp
                     command.Parameters.AddWithValue("password", password);
                     command.Parameters.AddWithValue("kota", kota);
                     command.Parameters.AddWithValue("provinsi", provinsi);
-                    command.Parameters.AddWithValue("username_pilihan", usernamePilihan);
+                    command.Parameters.AddWithValue("username", username);
 
                     try
                     {
@@ -215,7 +220,6 @@ namespace DesktopApp
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Your Account is created. Please login now.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            // Clear TextBoxes
                             txtNama.Text = "";
                             txtEmail.Text = "";
                             txtNo.Text = "";
@@ -224,6 +228,8 @@ namespace DesktopApp
                             txtKota.Text = "";
                             txtProvinsi.Text = "";
                             txtUsernamepilihan.Text = "";
+                            new Formlogin().Show();
+                            this.Hide();
                         }
                         else
                         {
