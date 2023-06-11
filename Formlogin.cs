@@ -81,34 +81,6 @@ namespace DesktopApp
                     {
                         MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    //if (txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
-                    //{
-
-                    //    NpgsqlCommand command = new NpgsqlCommand("select * from table_user where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
-                    //    NpgsqlDataReader dr = command.ExecuteReader();
-                    //    if (dr.Read())
-                    //    {
-                    //        string getIdQuery = "SELECT lastval()";
-                    //        using (NpgsqlCommand getIdCommand = new NpgsqlCommand(getIdQuery, connection))
-                    //        {
-                    //            userId = Convert.ToInt32(getIdCommand.ExecuteScalar());
-                    //        }
-                    //        MessageBox.Show("Selemat datang ", "login berhasil");
-                    //        dashboard form2 = new dashboard();
-                    //        form2.Show();
-                    //        this.Hide();
-                    //    }
-                    //    else
-                    //    {
-                    //        dr.Close();
-                    //        MessageBox.Show("Silahkan periksa kembali username and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //    }
-
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("Silahkan isi username dan password.", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //}
                 }
             }
         }

@@ -75,83 +75,6 @@ namespace DesktopApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //{
-            //    connection.Open();
-            //    using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection))
-            //    {
-            //        // Get values from TextBoxes
-            //        string namaLengkap = txtNama.Text;
-            //        string email = txtEmail.Text;
-            //        string noHp = txtNo.Text;
-            //        string password = txtPassword.Text;
-            //        string kota = txtKota.Text;
-            //        string provinsi = txtProvinsi.Text;
-            //        string username = txtUsernamepilihan.Text;
-
-            //        // parameter values
-            //        command.Parameters.AddWithValue("nama_lengkap", namaLengkap);
-            //        command.Parameters.AddWithValue("username_pilihan", username);
-            //        command.Parameters.AddWithValue("email", email);
-            //        command.Parameters.AddWithValue("no_hp", noHp);
-            //        command.Parameters.AddWithValue("password", password);
-            //        command.Parameters.AddWithValue("kota", kota);
-            //        command.Parameters.AddWithValue("provinsi", provinsi);
-
-            //        // input kosong
-            //        if (string.IsNullOrEmpty(namaLengkap) || string.IsNullOrEmpty(email) ||
-            //            string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(password) ||
-            //            string.IsNullOrEmpty(kota) || string.IsNullOrEmpty(provinsi) || string.IsNullOrEmpty(username))
-            //        {
-            //            MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //            return;
-            //        }
-
-
-            //        try
-            //        {
-            //            // Eksekusi
-            //            int rowsAffected = command.ExecuteNonQuery();
-
-            //            if (rowsAffected > 0)
-            //            {
-            //                MessageBox.Show("Your Account is created . Please login now.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //                txtNama.Text = "";
-            //                txtUsernamepilihan.Text = "";
-            //                txtEmail.Text = "";
-            //                txtNo.Text = "";
-            //                txtPassword.Text = "";
-            //                txtpassword2.Text = "";
-            //                txtProvinsi.Text = "";
-            //                txtKota.Text = "";
-            //                txtNama.Focus();
-
-            //                new Formlogin().Show();
-            //                this.Hide();
-            //            }
-            //            else
-            //            {
-
-            //                MessageBox.Show("Your Account is not created . Please check.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //            }
-            //        }
-            //        catch (NpgsqlException ex)
-            //        {
-            //            if (ex.SqlState == "23505" && (password != "" || kota != "" || provinsi != ""))
-            //            {
-            //                MessageBox.Show("Name/Username/Email/Phone number Already exist please try another ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //                txtNama.Text = "";
-            //                txtEmail.Text = "";
-            //                txtUsernamepilihan.Text = "";
-            //                txtNo.Text = "";
-            //                txtNama.Focus();
-            //            }
-            //            else
-            //            {
-            //                MessageBox.Show("Sistem Error ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //            }
-            //        }
-            //    }
-            //}
             if (txtpassword2.Text != txtPassword.Text)
             {
                 MessageBox.Show("Password confirmation does not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -173,7 +96,7 @@ namespace DesktopApp
                     string provinsi = txtProvinsi.Text;
                     string username = txtUsernamepilihan.Text;
 
-                    // Check for empty input
+                    // Check inputan kosong
                     if (string.IsNullOrEmpty(namaLengkap) || string.IsNullOrEmpty(email) ||
                         string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(username))
                     {
@@ -181,7 +104,7 @@ namespace DesktopApp
                         return;
                     }
 
-                    // Check if data already exists
+                    // Check data kalau ada
                     string checkQuery = "SELECT COUNT(*) FROM table_user WHERE nama_lengkap = @nama_lengkap OR email = @email OR no_hp = @no_hp " +
                                         "OR username = @username";
                     using (NpgsqlCommand checkCommand = new NpgsqlCommand(checkQuery, connection))
@@ -214,7 +137,7 @@ namespace DesktopApp
 
                     try
                     {
-                        // Execute the query
+                        // Eksekusi
                         int rowsAffected = command.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
