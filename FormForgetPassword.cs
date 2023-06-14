@@ -21,7 +21,7 @@ namespace Login_dan_Register_Project_PBO_A
                     if (txtEmail.Text != string.Empty)
                     {
 
-                        NpgsqlCommand command = new NpgsqlCommand("select * from data_user where email='" + txtEmail.Text + "'", connection);
+                        NpgsqlCommand command = new NpgsqlCommand("select * from table_user where email='" + txtEmail.Text + "'", connection);
                         NpgsqlDataReader dr = command.ExecuteReader();
                         if (dr.Read())
                         {
