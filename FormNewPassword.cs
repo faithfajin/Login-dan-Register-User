@@ -39,5 +39,45 @@ namespace Login_dan_Register_Project_PBO_A
                 txtPassword.Focus();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                button2.BringToFront();
+                txtPassword.PasswordChar = '*';
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                button3.BringToFront();
+                txtPassword.PasswordChar = '\0';
+
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                button4.BringToFront();
+                txtpassword2.PasswordChar = '\0';
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                button5.BringToFront();
+                txtpassword2.PasswordChar = '*';
+
+            }
+        }
     }
 }

@@ -51,6 +51,8 @@
             txtUsernamepilihan = new TextBox();
             button2 = new Button();
             button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
             SuspendLayout();
             // 
             // txtPassword
@@ -323,12 +325,38 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(662, 296);
+            button4.Location = new Point(709, 294);
             button4.Name = "button4";
             button4.Size = new Size(28, 28);
             button4.TabIndex = 32;
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(230, 231, 233);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.Location = new Point(729, 346);
+            button5.Name = "button5";
+            button5.Size = new Size(28, 28);
+            button5.TabIndex = 33;
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(230, 231, 233);
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(796, 346);
+            button6.Name = "button6";
+            button6.Size = new Size(28, 28);
+            button6.TabIndex = 34;
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // FormRegister
             // 
@@ -336,6 +364,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1080, 600);
+            Controls.Add(button6);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(txtUsernamepilihan);
@@ -396,5 +426,7 @@
         private TextBox textBox2;
         private Button button2;
         private Button button4;
+        private Button button5;
+        private Button button6;
     }
 }

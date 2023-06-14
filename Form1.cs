@@ -193,6 +193,24 @@ namespace DesktopApp
 
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                button5.BringToFront();
+                txtpassword2.PasswordChar = '\0';
 
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                button6.BringToFront();
+                txtpassword2.PasswordChar = '*';
+
+            }
+        }
     }
 }
