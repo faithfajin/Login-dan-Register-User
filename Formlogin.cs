@@ -2,8 +2,12 @@
 using Npgsql;
 namespace DesktopApp
 {
+
     public partial class Formlogin : Form
     {
+        public static string TempUsername { get; private set; }
+        public static string TempPassword { get; private set; }
+
         public Formlogin()
         {
             InitializeComponent();
@@ -62,6 +66,10 @@ namespace DesktopApp
 
                         if (result != null)
                         {
+                            TempUsername = username;
+                            TempPassword = password;
+
+
                             userId = Convert.ToInt32(result);
 
                             MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
