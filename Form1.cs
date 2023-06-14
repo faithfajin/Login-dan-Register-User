@@ -31,19 +31,6 @@ namespace DesktopApp
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxTampilkanPassword.Checked)
-            {
-                txtPassword.PasswordChar = '\0';
-                txtpassword2.PasswordChar = '\0';
-            }
-            else
-            {
-                txtPassword.PasswordChar = '*';
-                txtpassword2.PasswordChar = '*';
-            }
-        }
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -179,5 +166,33 @@ namespace DesktopApp
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (txtPassword.PasswordChar == '\0')
+            {
+                button4.BringToFront();
+                txtPassword.PasswordChar = '*';
+
+            }
+
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            if (txtPassword.PasswordChar == '*')
+            {
+                button2.BringToFront();
+                txtPassword.PasswordChar = '\0';
+
+            }
+
+        }
+
+
     }
 }

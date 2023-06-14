@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
             txtPassword = new TextBox();
             label3 = new Label();
             txtpassword2 = new TextBox();
             textKonfirmasiPassowrd = new Label();
-            checkBoxTampilkanPassword = new CheckBox();
             button1 = new Button();
             label4 = new Label();
             label5 = new Label();
@@ -49,11 +49,13 @@
             label11 = new Label();
             LabelUsername = new Label();
             txtUsernamepilihan = new TextBox();
+            button2 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // txtPassword
             // 
-            txtPassword.Anchor = AnchorStyles.None;
+            txtPassword.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -67,7 +69,7 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.None;
+            label3.Anchor = AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(392, 277);
@@ -79,7 +81,7 @@
             // 
             // txtpassword2
             // 
-            txtpassword2.Anchor = AnchorStyles.None;
+            txtpassword2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
             txtpassword2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -93,7 +95,7 @@
             // 
             // textKonfirmasiPassowrd
             // 
-            textKonfirmasiPassowrd.Anchor = AnchorStyles.None;
+            textKonfirmasiPassowrd.Anchor = AnchorStyles.Left;
             textKonfirmasiPassowrd.AutoSize = true;
             textKonfirmasiPassowrd.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             textKonfirmasiPassowrd.Location = new Point(392, 326);
@@ -103,24 +105,9 @@
             textKonfirmasiPassowrd.Text = "Konfirmasi Password";
             textKonfirmasiPassowrd.Click += textKonfirmasiPassowrd_Click;
             // 
-            // checkBoxTampilkanPassword
-            // 
-            checkBoxTampilkanPassword.Anchor = AnchorStyles.None;
-            checkBoxTampilkanPassword.AutoSize = true;
-            checkBoxTampilkanPassword.Cursor = Cursors.Hand;
-            checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
-            checkBoxTampilkanPassword.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBoxTampilkanPassword.Location = new Point(537, 379);
-            checkBoxTampilkanPassword.Name = "checkBoxTampilkanPassword";
-            checkBoxTampilkanPassword.Size = new Size(168, 27);
-            checkBoxTampilkanPassword.TabIndex = 7;
-            checkBoxTampilkanPassword.Text = "Tampilkan Password";
-            checkBoxTampilkanPassword.UseVisualStyleBackColor = true;
-            checkBoxTampilkanPassword.CheckedChanged += checkBox1_CheckedChanged;
-            // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.None;
+            button1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -163,7 +150,7 @@
             // 
             // txtNama
             // 
-            txtNama.Anchor = AnchorStyles.None;
+            txtNama.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtNama.BackColor = Color.FromArgb(230, 231, 233);
             txtNama.BorderStyle = BorderStyle.None;
             txtNama.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -175,7 +162,7 @@
             // 
             // label7
             // 
-            label7.Anchor = AnchorStyles.None;
+            label7.Anchor = AnchorStyles.Left;
             label7.AutoSize = true;
             label7.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label7.Location = new Point(389, 72);
@@ -187,7 +174,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.Anchor = AnchorStyles.None;
+            txtEmail.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtEmail.BackColor = Color.FromArgb(230, 231, 233);
             txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -199,7 +186,7 @@
             // 
             // label8
             // 
-            label8.Anchor = AnchorStyles.None;
+            label8.Anchor = AnchorStyles.Left;
             label8.AutoSize = true;
             label8.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(392, 174);
@@ -211,7 +198,7 @@
             // 
             // txtNo
             // 
-            txtNo.Anchor = AnchorStyles.None;
+            txtNo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtNo.BackColor = Color.FromArgb(230, 231, 233);
             txtNo.BorderStyle = BorderStyle.None;
             txtNo.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -223,7 +210,7 @@
             // 
             // label9
             // 
-            label9.Anchor = AnchorStyles.None;
+            label9.Anchor = AnchorStyles.Left;
             label9.AutoSize = true;
             label9.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label9.Location = new Point(392, 226);
@@ -234,7 +221,7 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.None;
+            label2.Anchor = AnchorStyles.Left;
             label2.AutoSize = true;
             label2.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(393, 398);
@@ -246,7 +233,7 @@
             // 
             // label10
             // 
-            label10.Anchor = AnchorStyles.None;
+            label10.Anchor = AnchorStyles.Left;
             label10.AutoSize = true;
             label10.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label10.Location = new Point(393, 449);
@@ -257,7 +244,7 @@
             // 
             // txtProvinsi
             // 
-            txtProvinsi.Anchor = AnchorStyles.None;
+            txtProvinsi.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtProvinsi.BackColor = Color.FromArgb(230, 231, 233);
             txtProvinsi.BorderStyle = BorderStyle.None;
             txtProvinsi.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -269,7 +256,7 @@
             // 
             // txtKota
             // 
-            txtKota.Anchor = AnchorStyles.None;
+            txtKota.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtKota.BackColor = Color.FromArgb(230, 231, 233);
             txtKota.BorderStyle = BorderStyle.None;
             txtKota.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -281,7 +268,7 @@
             // 
             // label11
             // 
-            label11.Anchor = AnchorStyles.None;
+            label11.Anchor = AnchorStyles.Left;
             label11.AutoSize = true;
             label11.Font = new Font("Poppins", 23.25F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.FromArgb(55, 163, 165);
@@ -293,7 +280,7 @@
             // 
             // LabelUsername
             // 
-            LabelUsername.Anchor = AnchorStyles.None;
+            LabelUsername.Anchor = AnchorStyles.Left;
             LabelUsername.AutoSize = true;
             LabelUsername.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             LabelUsername.Location = new Point(392, 123);
@@ -304,7 +291,7 @@
             // 
             // txtUsernamepilihan
             // 
-            txtUsernamepilihan.Anchor = AnchorStyles.None;
+            txtUsernamepilihan.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtUsernamepilihan.BackColor = Color.FromArgb(230, 231, 233);
             txtUsernamepilihan.BorderStyle = BorderStyle.None;
             txtUsernamepilihan.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -315,12 +302,42 @@
             txtUsernamepilihan.TabIndex = 30;
             txtUsernamepilihan.TextChanged += txtUsernamepilihan_TextChanged;
             // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Right;
+            button2.BackColor = Color.FromArgb(230, 231, 233);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(662, 296);
+            button2.Name = "button2";
+            button2.Size = new Size(28, 28);
+            button2.TabIndex = 31;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.Right;
+            button4.BackColor = Color.FromArgb(230, 231, 233);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.Location = new Point(662, 296);
+            button4.Name = "button4";
+            button4.Size = new Size(28, 28);
+            button4.TabIndex = 32;
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // FormRegister
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1080, 600);
+            Controls.Add(button4);
+            Controls.Add(button2);
             Controls.Add(txtUsernamepilihan);
             Controls.Add(LabelUsername);
             Controls.Add(label11);
@@ -337,7 +354,6 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(button1);
-            Controls.Add(checkBoxTampilkanPassword);
             Controls.Add(txtpassword2);
             Controls.Add(textKonfirmasiPassowrd);
             Controls.Add(txtPassword);
@@ -358,7 +374,6 @@
         private Label label3;
         private TextBox txtpassword2;
         private Label textKonfirmasiPassowrd;
-        private CheckBox checkBoxTampilkanPassword;
         private Button button1;
         private Label label4;
         private Label label5;
@@ -379,5 +394,7 @@
         private TextBox textUsername;
         private Label LabelUsername;
         private TextBox textBox2;
+        private Button button2;
+        private Button button4;
     }
 }
