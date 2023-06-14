@@ -52,7 +52,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -69,7 +69,7 @@
             // 
             // txtCode
             // 
-            txtCode.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtCode.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtCode.BackColor = Color.FromArgb(230, 231, 233);
             txtCode.BorderStyle = BorderStyle.None;
             txtCode.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -105,7 +105,7 @@
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.None;
+            label5.Anchor = AnchorStyles.Top;
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;

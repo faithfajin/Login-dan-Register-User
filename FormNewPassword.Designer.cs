@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNewPassword));
-            checkBoxTampilkanPassword = new CheckBox();
             txtpassword2 = new TextBox();
             textKonfirmasiPassowrd = new Label();
             txtPassword = new TextBox();
@@ -39,29 +38,12 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // checkBoxTampilkanPassword
-            // 
-            checkBoxTampilkanPassword.Anchor = AnchorStyles.None;
-            checkBoxTampilkanPassword.AutoSize = true;
-            checkBoxTampilkanPassword.Cursor = Cursors.Hand;
-            checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
-            checkBoxTampilkanPassword.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBoxTampilkanPassword.Location = new Point(530, 346);
-            checkBoxTampilkanPassword.Name = "checkBoxTampilkanPassword";
-            checkBoxTampilkanPassword.Size = new Size(168, 27);
-            checkBoxTampilkanPassword.TabIndex = 12;
-            checkBoxTampilkanPassword.Text = "Tampilkan Password";
-            checkBoxTampilkanPassword.UseVisualStyleBackColor = true;
-            checkBoxTampilkanPassword.CheckedChanged += checkBoxTampilkanPassword_CheckedChanged;
-            // 
             // txtpassword2
             // 
-            txtpassword2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtpassword2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
             txtpassword2.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -74,7 +56,6 @@
             // 
             // textKonfirmasiPassowrd
             // 
-            textKonfirmasiPassowrd.Anchor = AnchorStyles.Left;
             textKonfirmasiPassowrd.AutoSize = true;
             textKonfirmasiPassowrd.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             textKonfirmasiPassowrd.Location = new Point(386, 288);
@@ -85,7 +66,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtPassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -98,7 +79,6 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(387, 233);
@@ -133,7 +113,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -163,6 +143,7 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button3.BackColor = Color.FromArgb(230, 231, 233);
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
@@ -174,46 +155,17 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(230, 231, 233);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(655, 308);
-            button4.Name = "button4";
-            button4.Size = new Size(35, 35);
-            button4.TabIndex = 52;
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.FromArgb(230, 231, 233);
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.Location = new Point(655, 308);
-            button5.Name = "button5";
-            button5.Size = new Size(35, 35);
-            button5.TabIndex = 53;
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
-            // 
             // FormNewPassword
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1080, 600);
-            Controls.Add(button5);
-            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Controls.Add(checkBoxTampilkanPassword);
             Controls.Add(txtpassword2);
             Controls.Add(textKonfirmasiPassowrd);
             Controls.Add(txtPassword);
@@ -224,14 +176,13 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormNewPassword";
             WindowState = FormWindowState.Maximized;
+            Load += FormNewPassword_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private CheckBox checkBoxTampilkanPassword;
         private TextBox txtpassword2;
         private Label textKonfirmasiPassowrd;
         private TextBox txtPassword;
@@ -241,7 +192,5 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button button4;
-        private Button button5;
     }
 }

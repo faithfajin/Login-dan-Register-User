@@ -9,19 +9,6 @@ namespace Login_dan_Register_Project_PBO_A
             InitializeComponent();
         }
 
-        private void checkBoxTampilkanPassword_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxTampilkanPassword.Checked)
-            {
-                txtPassword.PasswordChar = '\0';
-                txtpassword2.PasswordChar = '\0';
-            }
-            else
-            {
-                txtPassword.PasswordChar = '*';
-                txtpassword2.PasswordChar = '*';
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -42,42 +29,28 @@ namespace Login_dan_Register_Project_PBO_A
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (txtPassword.PasswordChar == '\0')
+            if (txtPassword.PasswordChar == '*')
             {
                 button2.BringToFront();
-                txtPassword.PasswordChar = '*';
+                txtPassword.PasswordChar = '\0';
 
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (txtPassword.PasswordChar == '*')
-            {
-                button3.BringToFront();
-                txtPassword.PasswordChar = '\0';
-
-            }
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (txtPassword.PasswordChar == '*')
-            {
-                button4.BringToFront();
-                txtpassword2.PasswordChar = '\0';
-
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
             if (txtPassword.PasswordChar == '\0')
             {
-                button5.BringToFront();
-                txtpassword2.PasswordChar = '*';
+                button3.BringToFront();
+                txtPassword.PasswordChar = '*';
 
             }
+        }
+
+
+        private void FormNewPassword_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
