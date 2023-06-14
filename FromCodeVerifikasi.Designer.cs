@@ -40,7 +40,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.ImageLocation = "";
             pictureBox1.Location = new Point(487, 119);
@@ -52,7 +52,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.None;
+            button1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -69,7 +69,7 @@
             // 
             // txtCode
             // 
-            txtCode.Anchor = AnchorStyles.None;
+            txtCode.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtCode.BackColor = Color.FromArgb(230, 231, 233);
             txtCode.BorderStyle = BorderStyle.None;
             txtCode.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -82,7 +82,6 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(164, 165, 169);
@@ -94,7 +93,7 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.None;
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Poppins", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
