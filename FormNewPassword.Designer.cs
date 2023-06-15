@@ -78,7 +78,7 @@
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(300, 35);
             txtPassword.TabIndex = 9;
-            txtPassword.Text = "JT-App";
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // label3
             // 

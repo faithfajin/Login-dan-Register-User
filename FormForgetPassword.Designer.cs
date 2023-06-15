@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormForgetPassword));
-            label6 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
             txtEmail = new TextBox();
@@ -37,20 +36,12 @@
             label1 = new Label();
             label8 = new Label();
             label5 = new Label();
+            textBox1 = new TextBox();
+            label3 = new Label();
+            button2 = new Button();
+            txtcode = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // label6
-            // 
-            label6.Anchor = AnchorStyles.Top;
-            label6.AutoSize = true;
-            label6.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(164, 165, 169);
-            label6.Location = new Point(348, 211);
-            label6.Name = "label6";
-            label6.Size = new Size(376, 23);
-            label6.TabIndex = 38;
-            label6.Text = "Please, enter your email address, You will receive a link";
             // 
             // pictureBox1
             // 
@@ -73,7 +64,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(390, 354);
+            button1.Location = new Point(390, 421);
             button1.Name = "button1";
             button1.Size = new Size(300, 38);
             button1.TabIndex = 34;
@@ -87,7 +78,7 @@
             txtEmail.BackColor = Color.FromArgb(230, 231, 233);
             txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            txtEmail.Location = new Point(390, 310);
+            txtEmail.Location = new Point(390, 377);
             txtEmail.Multiline = true;
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(300, 35);
@@ -98,11 +89,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(164, 165, 169);
-            label2.Location = new Point(387, 290);
+            label2.Location = new Point(387, 357);
             label2.Name = "label2";
-            label2.Size = new Size(48, 23);
+            label2.Size = new Size(153, 23);
             label2.TabIndex = 29;
-            label2.Text = "Email";
+            label2.Text = "Masukkan Username";
             // 
             // label1
             // 
@@ -122,11 +113,11 @@
             label8.AutoSize = true;
             label8.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.FromArgb(164, 165, 169);
-            label8.Location = new Point(419, 229);
+            label8.Location = new Point(519, 229);
             label8.Name = "label8";
-            label8.Size = new Size(246, 23);
+            label8.Size = new Size(44, 23);
             label8.TabIndex = 40;
-            label8.Text = "to create a new password via email";
+            label8.Text = "Kode";
             // 
             // label5
             // 
@@ -136,12 +127,63 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(55, 163, 165);
-            label5.Location = new Point(496, 397);
+            label5.Location = new Point(496, 464);
             label5.Name = "label5";
             label5.Size = new Size(89, 22);
             label5.TabIndex = 41;
             label5.Text = "Back to login";
             label5.Click += label5_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBox1.BackColor = Color.FromArgb(230, 231, 233);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(390, 319);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(300, 35);
+            textBox1.TabIndex = 43;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(164, 165, 169);
+            label3.Location = new Point(387, 299);
+            label3.Name = "label3";
+            label3.Size = new Size(118, 23);
+            label3.TabIndex = 42;
+            label3.Text = "Masukkan Kode";
+            // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top;
+            button2.BackColor = Color.FromArgb(55, 163, 165);
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(445, 253);
+            button2.Name = "button2";
+            button2.Size = new Size(25, 25);
+            button2.TabIndex = 44;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // txtcode
+            // 
+            txtcode.Anchor = AnchorStyles.Top;
+            txtcode.BackColor = Color.FromArgb(230, 231, 233);
+            txtcode.BorderStyle = BorderStyle.None;
+            txtcode.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            txtcode.Location = new Point(485, 253);
+            txtcode.Multiline = true;
+            txtcode.Name = "txtcode";
+            txtcode.Size = new Size(108, 25);
+            txtcode.TabIndex = 45;
             // 
             // FormForgetPassword
             // 
@@ -149,9 +191,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1080, 600);
+            Controls.Add(txtcode);
+            Controls.Add(button2);
+            Controls.Add(textBox1);
+            Controls.Add(label3);
             Controls.Add(label5);
             Controls.Add(label8);
-            Controls.Add(label6);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(txtEmail);
@@ -170,8 +215,6 @@
         }
 
         #endregion
-
-        private Label label6;
         private PictureBox pictureBox1;
         private Button button1;
         private TextBox txtUsername;
@@ -180,5 +223,9 @@
         private Label label8;
         private Label label5;
         private TextBox txtEmail;
+        private TextBox textBox1;
+        private Label label3;
+        private Button button2;
+        private TextBox txtcode;
     }
 }
