@@ -49,11 +49,11 @@
             // 
             label4.Anchor = AnchorStyles.Top;
             label4.AutoSize = true;
-            label4.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(164, 165, 169);
             label4.Location = new Point(430, 471);
             label4.Name = "label4";
-            label4.Size = new Size(142, 22);
+            label4.Size = new Size(137, 22);
             label4.TabIndex = 22;
             label4.Text = "Tidak Memiliki Akun?";
             // 
@@ -64,7 +64,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(390, 381);
             button1.Name = "button1";
@@ -79,7 +79,7 @@
             txtPassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
-            txtPassword.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txtPassword.Location = new Point(390, 312);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
@@ -90,7 +90,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(164, 165, 169);
             label3.Location = new Point(393, 292);
             label3.Name = "label3";
@@ -103,7 +103,7 @@
             txtUsername.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtUsername.BackColor = Color.FromArgb(230, 231, 233);
             txtUsername.BorderStyle = BorderStyle.None;
-            txtUsername.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txtUsername.Location = new Point(390, 247);
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
@@ -114,7 +114,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(393, 227);
             label2.Name = "label2";
@@ -126,7 +126,7 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Font = new Font("Poppins", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Poppins SemiBold", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
             label1.Location = new Point(449, 159);
             label1.Name = "label1";
@@ -151,7 +151,7 @@
             // 
             label6.Anchor = AnchorStyles.Top;
             label6.AutoSize = true;
-            label6.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(164, 165, 169);
             label6.Location = new Point(485, 186);
             label6.Name = "label6";
@@ -165,7 +165,7 @@
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
-            label5.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(55, 163, 165);
             label5.Location = new Point(570, 471);
             label5.Name = "label5";
@@ -180,7 +180,7 @@
             label7.AutoSize = true;
             label7.Cursor = Cursors.Hand;
             label7.FlatStyle = FlatStyle.Flat;
-            label7.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.FromArgb(164, 165, 169);
             label7.Location = new Point(581, 422);
             label7.Name = "label7";
