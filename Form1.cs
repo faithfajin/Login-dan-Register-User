@@ -146,6 +146,7 @@ namespace DesktopApp
                             MessageBox.Show("Gagal membuat akun.", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
+                    //Disini digunakan untuk menangani pengecualian yang terkait dengan koneksi dan operasi database yang menggunakan library Npgsql 
                     catch (NpgsqlException ex)
                     {
                         MessageBox.Show("Telah terjadi kesalahan" + ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
