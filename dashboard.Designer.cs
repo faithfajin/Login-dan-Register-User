@@ -36,7 +36,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Name = "dashboard";
-            Text = "dashboard";
+            Text = "JT-App";
             Load += dashboard_Load;
             ResumeLayout(false);
         }

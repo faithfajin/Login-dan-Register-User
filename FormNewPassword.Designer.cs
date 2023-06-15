@@ -78,6 +78,7 @@
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(300, 35);
             txtPassword.TabIndex = 9;
+            txtPassword.Text = "JT-App";
             // 
             // label3
             // 
@@ -207,7 +208,7 @@
             ForeColor = Color.FromArgb(164, 165, 169);
             Name = "FormNewPassword";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormNewPassword";
+            Text = "JT-App";
             WindowState = FormWindowState.Maximized;
             Load += FormNewPassword_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

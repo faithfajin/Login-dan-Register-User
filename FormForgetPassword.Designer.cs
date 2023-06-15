@@ -161,7 +161,7 @@
             ForeColor = Color.FromArgb(164, 165, 169);
             Name = "FormForgetPassword";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormForgetPassword";
+            Text = "JT-App";
             WindowState = FormWindowState.Maximized;
             Load += FormForgetPassword_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

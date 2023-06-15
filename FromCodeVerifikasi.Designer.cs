@@ -133,7 +133,8 @@
             ForeColor = Color.FromArgb(164, 165, 169);
             Name = "FromCodeVerifikasi";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FromCodeVerifikasi";
+            Tag = "";
+            Text = "JT-App";
             WindowState = FormWindowState.Maximized;
             Load += FromCodeVerifikasi_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

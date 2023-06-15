@@ -74,7 +74,7 @@
             label3.Anchor = AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(392, 277);
+            label3.Location = new Point(389, 277);
             label3.Name = "label3";
             label3.Size = new Size(74, 23);
             label3.TabIndex = 3;
@@ -100,7 +100,7 @@
             textKonfirmasiPassowrd.Anchor = AnchorStyles.Left;
             textKonfirmasiPassowrd.AutoSize = true;
             textKonfirmasiPassowrd.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            textKonfirmasiPassowrd.Location = new Point(392, 332);
+            textKonfirmasiPassowrd.Location = new Point(389, 332);
             textKonfirmasiPassowrd.Name = "textKonfirmasiPassowrd";
             textKonfirmasiPassowrd.Size = new Size(150, 23);
             textKonfirmasiPassowrd.TabIndex = 5;
@@ -191,7 +191,7 @@
             label8.Anchor = AnchorStyles.Left;
             label8.AutoSize = true;
             label8.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(392, 174);
+            label8.Location = new Point(389, 174);
             label8.Name = "label8";
             label8.Size = new Size(48, 23);
             label8.TabIndex = 15;
@@ -215,7 +215,7 @@
             label9.Anchor = AnchorStyles.Left;
             label9.AutoSize = true;
             label9.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(392, 226);
+            label9.Location = new Point(389, 226);
             label9.Name = "label9";
             label9.Size = new Size(49, 23);
             label9.TabIndex = 17;
@@ -226,7 +226,7 @@
             label2.Anchor = AnchorStyles.Left;
             label2.AutoSize = true;
             label2.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(393, 398);
+            label2.Location = new Point(389, 398);
             label2.Name = "label2";
             label2.Size = new Size(63, 23);
             label2.TabIndex = 19;
@@ -238,7 +238,7 @@
             label10.Anchor = AnchorStyles.Left;
             label10.AutoSize = true;
             label10.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(393, 449);
+            label10.Location = new Point(389, 449);
             label10.Name = "label10";
             label10.Size = new Size(41, 23);
             label10.TabIndex = 21;
@@ -285,7 +285,7 @@
             LabelUsername.Anchor = AnchorStyles.Left;
             LabelUsername.AutoSize = true;
             LabelUsername.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            LabelUsername.Location = new Point(392, 123);
+            LabelUsername.Location = new Point(389, 123);
             LabelUsername.Name = "LabelUsername";
             LabelUsername.Size = new Size(79, 23);
             LabelUsername.TabIndex = 29;
