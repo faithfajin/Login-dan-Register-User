@@ -60,7 +60,7 @@
             txtPassword.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
-            txtPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtPassword.Location = new Point(390, 296);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
@@ -86,13 +86,13 @@
             txtpassword2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
-            txtpassword2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtpassword2.Location = new Point(390, 346);
+            txtpassword2.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtpassword2.Location = new Point(390, 352);
             txtpassword2.Multiline = true;
             txtpassword2.Name = "txtpassword2";
             txtpassword2.PasswordChar = '*';
             txtpassword2.Size = new Size(300, 28);
-            txtpassword2.TabIndex = 6;
+            txtpassword2.TabIndex = 4;
             txtpassword2.TextChanged += txtpassword2_TextChanged;
             // 
             // textKonfirmasiPassowrd
@@ -155,7 +155,7 @@
             txtNama.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtNama.BackColor = Color.FromArgb(230, 231, 233);
             txtNama.BorderStyle = BorderStyle.None;
-            txtNama.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNama.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtNama.Location = new Point(390, 92);
             txtNama.Multiline = true;
             txtNama.Name = "txtNama";
@@ -179,7 +179,7 @@
             txtEmail.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtEmail.BackColor = Color.FromArgb(230, 231, 233);
             txtEmail.BorderStyle = BorderStyle.None;
-            txtEmail.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtEmail.Location = new Point(390, 194);
             txtEmail.Multiline = true;
             txtEmail.Name = "txtEmail";
@@ -203,7 +203,7 @@
             txtNo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtNo.BackColor = Color.FromArgb(230, 231, 233);
             txtNo.BorderStyle = BorderStyle.None;
-            txtNo.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNo.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtNo.Location = new Point(390, 246);
             txtNo.Multiline = true;
             txtNo.Name = "txtNo";
@@ -249,7 +249,7 @@
             txtProvinsi.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtProvinsi.BackColor = Color.FromArgb(230, 231, 233);
             txtProvinsi.BorderStyle = BorderStyle.None;
-            txtProvinsi.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtProvinsi.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtProvinsi.Location = new Point(390, 418);
             txtProvinsi.Multiline = true;
             txtProvinsi.Name = "txtProvinsi";
@@ -261,7 +261,7 @@
             txtKota.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtKota.BackColor = Color.FromArgb(230, 231, 233);
             txtKota.BorderStyle = BorderStyle.None;
-            txtKota.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtKota.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtKota.Location = new Point(390, 469);
             txtKota.Multiline = true;
             txtKota.Name = "txtKota";
@@ -296,8 +296,8 @@
             txtUsernamepilihan.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtUsernamepilihan.BackColor = Color.FromArgb(230, 231, 233);
             txtUsernamepilihan.BorderStyle = BorderStyle.None;
-            txtUsernamepilihan.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsernamepilihan.Location = new Point(387, 143);
+            txtUsernamepilihan.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUsernamepilihan.Location = new Point(390, 143);
             txtUsernamepilihan.Multiline = true;
             txtUsernamepilihan.Name = "txtUsernamepilihan";
             txtUsernamepilihan.Size = new Size(300, 28);
@@ -334,27 +334,30 @@
             // 
             // button5
             // 
+            button5.Anchor = AnchorStyles.Right;
             button5.BackColor = Color.FromArgb(230, 231, 233);
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.Location = new Point(662, 346);
+            button5.Location = new Point(662, 352);
             button5.Name = "button5";
             button5.Size = new Size(28, 28);
-            button5.TabIndex = 33;
+            button5.TabIndex = 31;
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
             // button6
             // 
+            button6.Anchor = AnchorStyles.Right;
             button6.BackColor = Color.FromArgb(230, 231, 233);
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(662, 346);
+            button6.Location = new Point(662, 352);
             button6.Name = "button6";
             button6.Size = new Size(28, 28);
-            button6.TabIndex = 34;
+            button6.TabIndex = 32;
+            button6.TextImageRelation = TextImageRelation.ImageAboveText;
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
