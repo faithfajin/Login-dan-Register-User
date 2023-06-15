@@ -33,7 +33,7 @@
             button1 = new Button();
             txtPassword = new TextBox();
             label3 = new Label();
-            txtUsername = new TextBox();
+            txtEmail = new TextBox();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
@@ -98,18 +98,18 @@
             label3.TabIndex = 15;
             label3.Text = "Password";
             // 
-            // txtUsername
+            // txtEmail
             // 
-            txtUsername.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtUsername.BackColor = Color.FromArgb(230, 231, 233);
-            txtUsername.BorderStyle = BorderStyle.None;
-            txtUsername.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            txtUsername.Location = new Point(390, 247);
-            txtUsername.Multiline = true;
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(300, 35);
-            txtUsername.TabIndex = 14;
-            txtUsername.TextChanged += textusername_TextChanged;
+            txtEmail.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtEmail.BackColor = Color.FromArgb(230, 231, 233);
+            txtEmail.BorderStyle = BorderStyle.None;
+            txtEmail.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            txtEmail.Location = new Point(390, 247);
+            txtEmail.Multiline = true;
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(300, 35);
+            txtEmail.TabIndex = 14;
+            txtEmail.TextChanged += textusername_TextChanged;
             // 
             // label2
             // 
@@ -118,9 +118,9 @@
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(393, 227);
             label2.Name = "label2";
-            label2.Size = new Size(73, 22);
+            label2.Size = new Size(43, 22);
             label2.TabIndex = 13;
-            label2.Text = "Username";
+            label2.Text = "Email";
             // 
             // label1
             // 
@@ -233,7 +233,7 @@
             Controls.Add(button1);
             Controls.Add(txtPassword);
             Controls.Add(label3);
-            Controls.Add(txtUsername);
+            Controls.Add(txtEmail);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
@@ -252,7 +252,7 @@
         private Button button1;
         private TextBox txtPassword;
         private Label label3;
-        private TextBox txtUsername;
+        private TextBox txtEmail;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;

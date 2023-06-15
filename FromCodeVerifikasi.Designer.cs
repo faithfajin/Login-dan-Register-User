@@ -57,7 +57,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(387, 311);
             button1.Name = "button1";
@@ -72,7 +72,7 @@
             txtCode.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtCode.BackColor = Color.FromArgb(230, 231, 233);
             txtCode.BorderStyle = BorderStyle.None;
-            txtCode.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCode.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txtCode.Location = new Point(387, 267);
             txtCode.Multiline = true;
             txtCode.Name = "txtCode";
@@ -83,11 +83,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(390, 247);
             label2.Name = "label2";
-            label2.Size = new Size(111, 23);
+            label2.Size = new Size(108, 23);
             label2.TabIndex = 43;
             label2.Text = "Enter verifikasi";
             // 
@@ -95,11 +95,11 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Font = new Font("Poppins", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Poppins SemiBold", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
             label1.Location = new Point(444, 210);
             label1.Name = "label1";
-            label1.Size = new Size(194, 36);
+            label1.Size = new Size(193, 36);
             label1.TabIndex = 42;
             label1.Text = "Verification Code";
             // 
@@ -109,7 +109,7 @@
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
-            label5.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(55, 163, 165);
             label5.Location = new Point(483, 363);
             label5.Name = "label5";

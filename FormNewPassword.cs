@@ -12,6 +12,7 @@ namespace Login_dan_Register_Project_PBO_A
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Dummy
             if (txtPassword.Text == txtpassword2.Text)
             {
                 this.Close();
@@ -51,6 +52,28 @@ namespace Login_dan_Register_Project_PBO_A
         private void FormNewPassword_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            if (txtpassword2.PasswordChar == '*')
+            {
+                button4.BringToFront();
+                txtpassword2.PasswordChar = '\0';
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            if (txtpassword2.PasswordChar == '\0')
+            {
+                button5.BringToFront();
+                txtpassword2.PasswordChar = '*';
+
+            }
         }
     }
 }

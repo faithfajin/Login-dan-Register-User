@@ -44,11 +44,11 @@
             // 
             label6.Anchor = AnchorStyles.Top;
             label6.AutoSize = true;
-            label6.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(164, 165, 169);
             label6.Location = new Point(348, 211);
             label6.Name = "label6";
-            label6.Size = new Size(383, 23);
+            label6.Size = new Size(376, 23);
             label6.TabIndex = 38;
             label6.Text = "Please, enter your email address, You will receive a link";
             // 
@@ -71,7 +71,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(390, 354);
             button1.Name = "button1";
@@ -86,7 +86,7 @@
             txtEmail.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtEmail.BackColor = Color.FromArgb(230, 231, 233);
             txtEmail.BorderStyle = BorderStyle.None;
-            txtEmail.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txtEmail.Location = new Point(390, 310);
             txtEmail.Multiline = true;
             txtEmail.Name = "txtEmail";
@@ -96,7 +96,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(387, 290);
             label2.Name = "label2";
@@ -108,11 +108,11 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Font = new Font("Poppins", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Poppins SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
             label1.Location = new Point(445, 181);
             label1.Name = "label1";
-            label1.Size = new Size(195, 37);
+            label1.Size = new Size(191, 37);
             label1.TabIndex = 28;
             label1.Text = "Forgot Password";
             // 
@@ -120,11 +120,11 @@
             // 
             label8.Anchor = AnchorStyles.Top;
             label8.AutoSize = true;
-            label8.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.FromArgb(164, 165, 169);
             label8.Location = new Point(419, 229);
             label8.Name = "label8";
-            label8.Size = new Size(248, 23);
+            label8.Size = new Size(246, 23);
             label8.TabIndex = 40;
             label8.Text = "to create a new password via email";
             // 
@@ -134,11 +134,11 @@
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
-            label5.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(55, 163, 165);
             label5.Location = new Point(496, 397);
             label5.Name = "label5";
-            label5.Size = new Size(91, 22);
+            label5.Size = new Size(89, 22);
             label5.TabIndex = 41;
             label5.Text = "Back to login";
             label5.Click += label5_Click;

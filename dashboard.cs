@@ -10,10 +10,10 @@ namespace Login_dan_Register_Project_PBO_A
         }
         private void dashboard_Load(object sender, EventArgs e)
         {
-            string username = Formlogin.TempUsername;
+            string email = Formlogin.TempEmail;
             string password = Formlogin.TempPassword;
 
-            MessageBox.Show($"Username: {username}\nPassword: {password}", "Credentials", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Email: {email}\nPassword: {password}", "Credentials", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

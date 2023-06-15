@@ -5,7 +5,7 @@ namespace DesktopApp
 
     public partial class Formlogin : Form
     {
-        public static string TempUsername { get; private set; }
+        public static string TempEmail { get; private set; }
         public static string TempPassword { get; private set; }
 
         public Formlogin()
@@ -15,7 +15,7 @@ namespace DesktopApp
 
         private int userId; // Variabel untuk menyimpan ID pengguna
         string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
-        string selectQuery = "SELECT id FROM table_user WHERE username = @username AND password = @password";
+        string selectQuery = "SELECT id FROM table_user WHERE email = @email AND password = @password";
         private void Formlogin_Load(object sender, EventArgs e)
         {
 
@@ -45,18 +45,18 @@ namespace DesktopApp
                 using (NpgsqlCommand command = new NpgsqlCommand(selectQuery, connection))
                 {
                     // Get values 
-                    string username = txtUsername.Text;
+                    string email = txtEmail.Text;
                     string password = txtPassword.Text;
 
                     // ngecek empty input
-                    if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                    if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
                     {
-                        MessageBox.Show("Please enter a username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Please enter your email and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
                     // ngeset parameter values
-                    command.Parameters.AddWithValue("username", username);
+                    command.Parameters.AddWithValue("email", email);
                     command.Parameters.AddWithValue("password", password);
 
                     try
@@ -66,7 +66,7 @@ namespace DesktopApp
 
                         if (result != null)
                         {
-                            TempUsername = username;
+                            TempEmail = email;
                             TempPassword = password;
 
 
@@ -74,7 +74,7 @@ namespace DesktopApp
 
                             MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             // Clear TextBoxes
-                            txtUsername.Text = "";
+                            txtEmail.Text = "";
                             txtPassword.Text = "";
                             this.Hide();
                             new dashboard().Show();
@@ -82,7 +82,7 @@ namespace DesktopApp
                         }
                         else
                         {
-                            MessageBox.Show("Silahkan periksa kembali username and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Silahkan periksa kembali email and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     catch (NpgsqlException ex)

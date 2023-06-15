@@ -38,6 +38,8 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             txtpassword2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
-            txtpassword2.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtpassword2.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txtpassword2.Location = new Point(390, 308);
             txtpassword2.Multiline = true;
             txtpassword2.Name = "txtpassword2";
@@ -57,10 +59,10 @@
             // textKonfirmasiPassowrd
             // 
             textKonfirmasiPassowrd.AutoSize = true;
-            textKonfirmasiPassowrd.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            textKonfirmasiPassowrd.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             textKonfirmasiPassowrd.Location = new Point(386, 288);
             textKonfirmasiPassowrd.Name = "textKonfirmasiPassowrd";
-            textKonfirmasiPassowrd.Size = new Size(153, 23);
+            textKonfirmasiPassowrd.Size = new Size(150, 23);
             textKonfirmasiPassowrd.TabIndex = 10;
             textKonfirmasiPassowrd.Text = "Konfirmasi Password";
             // 
@@ -69,7 +71,7 @@
             txtPassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
-            txtPassword.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txtPassword.Location = new Point(390, 251);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
@@ -80,10 +82,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(387, 233);
             label3.Name = "label3";
-            label3.Size = new Size(107, 23);
+            label3.Size = new Size(106, 23);
             label3.TabIndex = 8;
             label3.Text = "New Password";
             // 
@@ -103,11 +105,11 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Font = new Font("Poppins", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Poppins SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(55, 163, 165);
             label1.Location = new Point(447, 197);
             label1.Name = "label1";
-            label1.Size = new Size(173, 37);
+            label1.Size = new Size(170, 37);
             label1.TabIndex = 47;
             label1.Text = "New Password";
             // 
@@ -118,7 +120,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(390, 375);
             button1.Name = "button1";
@@ -156,12 +158,42 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button4.BackColor = Color.FromArgb(230, 231, 233);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.Location = new Point(655, 308);
+            button4.Name = "button4";
+            button4.Size = new Size(35, 35);
+            button4.TabIndex = 52;
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button5.BackColor = Color.FromArgb(230, 231, 233);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.Location = new Point(655, 308);
+            button5.Name = "button5";
+            button5.Size = new Size(35, 35);
+            button5.TabIndex = 53;
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
             // FormNewPassword
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1080, 600);
+            Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -193,5 +225,7 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }
