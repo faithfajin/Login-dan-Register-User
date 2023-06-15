@@ -184,6 +184,7 @@
             txtcode.Name = "txtcode";
             txtcode.Size = new Size(108, 25);
             txtcode.TabIndex = 45;
+            txtcode.TextAlign = HorizontalAlignment.Center;
             // 
             // FormForgetPassword
             // 
