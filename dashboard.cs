@@ -13,7 +13,7 @@ namespace Login_dan_Register_Project_PBO_A
             string email = Formlogin.TempEmail;
             string password = Formlogin.TempPassword;
 
-            MessageBox.Show($"Email: {email}\nPassword: {password}", "Credentials", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Username/Nama lengkap: {email}\nPassword: {password}", "Credentials", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

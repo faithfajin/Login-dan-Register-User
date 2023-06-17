@@ -15,7 +15,7 @@ namespace DesktopApp
 
         private int userId; // Variabel untuk menyimpan ID pengguna
         string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
-        string selectQuery = "SELECT id FROM table_user WHERE email = @email AND password = @password";
+        string selectQuery = "SELECT id FROM table_user WHERE (email = email Or nama_lengkap = nama_lengkap) AND password = @password";
         private void Formlogin_Load(object sender, EventArgs e)
         {
 
