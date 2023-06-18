@@ -68,55 +68,43 @@ namespace DesktopApp
                 txtpassword2.Text = "";
                 return;
             }
+
+            string namaLengkap = txtNama.Text;
+            string email = txtEmail.Text;
+            string noHp = txtNo.Text;
+            string password = txtPassword.Text;
+            string kota = txtKota.Text;
+            string provinsi = txtProvinsi.Text;
+            string username = txtUsernamepilihan.Text;
+
+            if (string.IsNullOrEmpty(namaLengkap) || string.IsNullOrEmpty(email) ||
+                string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Harap mengisi semua kolom.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (password.Length < 6)
+            {
+                MessageBox.Show("Kata sandi harus memiliki minimal 6 karakter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int CekNoHp;
+            if (!int.TryParse(noHp, out CekNoHp))
+            {
+                MessageBox.Show("Nomor telepon harus berupa angka.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
             {
                 connection.Open();
                 using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection))
-
                 {
-                    // Disini saya membaca values inputan user
-                    string namaLengkap = txtNama.Text;
-                    string email = txtEmail.Text;
-                    string noHp = txtNo.Text;
-                    string password = txtPassword.Text;
-                    string kota = txtKota.Text;
-                    string provinsi = txtProvinsi.Text;
-                    string username = txtUsernamepilihan.Text;
-
-                    // Disini saya mengecek inputan kosong
-                    if (string.IsNullOrEmpty(namaLengkap) || string.IsNullOrEmpty(email) ||
-                        string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(username))
-                    {
-                        MessageBox.Show("Harap mengisi di semua kolom.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-
-                    // Disini saya mengecek bila inpuntan data dari user terdapat dalam database
-                    string checkQuery = "SELECT COUNT(*) FROM table_user WHERE nama_lengkap = @nama_lengkap OR email = @email OR no_hp = @no_hp " +
-                                        "OR username = @username";
-                    using (NpgsqlCommand checkCommand = new NpgsqlCommand(checkQuery, connection))
-                    {
-                        checkCommand.Parameters.AddWithValue("nama_lengkap", namaLengkap);
-                        checkCommand.Parameters.AddWithValue("email", email);
-                        checkCommand.Parameters.AddWithValue("username", username);
-                        checkCommand.Parameters.AddWithValue("no_hp", noHp);
-
-                        int count = Convert.ToInt32(checkCommand.ExecuteScalar());
-                        if (count > 0)
-                        {
-                            MessageBox.Show("Name/Username/Email/Phone number Already exist please try another ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            txtNama.Text = "";
-                            txtEmail.Text = "";
-                            txtNo.Text = "";
-                            txtUsernamepilihan.Text = "";
-                            return;
-                        }
-                    }
-
-                    // Disini bila tidak terdeteksi kesamaan dalam database maka lanjut menambah values paramater
                     command.Parameters.AddWithValue("nama_lengkap", namaLengkap);
                     command.Parameters.AddWithValue("email", email);
-                    command.Parameters.AddWithValue("no_hp", noHp);
+                    command.Parameters.AddWithValue("no_hp", CekNoHp);
                     command.Parameters.AddWithValue("password", password);
                     command.Parameters.AddWithValue("kota", kota);
                     command.Parameters.AddWithValue("provinsi", provinsi);
@@ -124,20 +112,11 @@ namespace DesktopApp
 
                     try
                     {
-                        // Disini saya mengeksekusi parameter sehingga data ditambahkan di database
                         int rowsAffected = command.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Akun Anda telah dibuat. Silakan login sekarang.", "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            txtNama.Text = "";
-                            txtEmail.Text = "";
-                            txtNo.Text = "";
-                            txtPassword.Text = "";
-                            txtpassword2.Text = "";
-                            txtKota.Text = "";
-                            txtProvinsi.Text = "";
-                            txtUsernamepilihan.Text = "";
                             this.Close();
                             new Formlogin().Show();
                         }
@@ -146,10 +125,9 @@ namespace DesktopApp
                             MessageBox.Show("Gagal membuat akun.", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
-                    //Disini digunakan untuk menangani pengecualian yang terkait dengan koneksi dan operasi database yang menggunakan library Npgsql 
                     catch (NpgsqlException ex)
                     {
-                        MessageBox.Show("Telah terjadi kesalahan" + ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Telah terjadi kesalahan: " + ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
