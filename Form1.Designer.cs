@@ -209,6 +209,7 @@
             txtNo.Name = "txtNo";
             txtNo.Size = new Size(300, 28);
             txtNo.TabIndex = 18;
+            txtNo.TextChanged += txtNo_TextChanged;
             // 
             // label9
             // 

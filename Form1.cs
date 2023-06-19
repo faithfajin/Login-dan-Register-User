@@ -90,8 +90,14 @@ namespace DesktopApp
                 return;
             }
 
-            int CekNoHp;
-            if (!int.TryParse(noHp, out CekNoHp))
+            if (noHp.Length > 20)
+            {
+                MessageBox.Show("Nomor telepon tidak boleh lebih dari 20 karakter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int parsedNoHp;
+            if (!int.TryParse(noHp, out parsedNoHp))
             {
                 MessageBox.Show("Nomor telepon harus berupa angka.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -104,7 +110,7 @@ namespace DesktopApp
                 {
                     command.Parameters.AddWithValue("nama_lengkap", namaLengkap);
                     command.Parameters.AddWithValue("email", email);
-                    command.Parameters.AddWithValue("no_hp", CekNoHp);
+                    command.Parameters.AddWithValue("no_hp", parsedNoHp);
                     command.Parameters.AddWithValue("password", password);
                     command.Parameters.AddWithValue("kota", kota);
                     command.Parameters.AddWithValue("provinsi", provinsi);
@@ -191,6 +197,11 @@ namespace DesktopApp
                 txtpassword2.PasswordChar = '\0';
 
             }
+
+        }
+
+        private void txtNo_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
