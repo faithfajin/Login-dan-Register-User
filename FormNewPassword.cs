@@ -5,7 +5,7 @@ namespace Login_dan_Register_Project_PBO_A
 {
     public partial class FormNewPassword : Form
     {
-        private string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
+        private string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-Apps";
         private string username;
         public FormNewPassword()
         {

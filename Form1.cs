@@ -9,7 +9,7 @@ namespace DesktopApp
             InitializeComponent();
         }
 
-        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
+        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-Apps";
 
 
         string insertQuery = "INSERT INTO \"User\" (nama_lengkap, email, kata_sandi, nomor_telepon, kota, provinsi, poin, status, membership_membership_id) " +
@@ -90,6 +90,20 @@ namespace DesktopApp
             using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
             {
                 connection.Open();
+                string checkQuery = "SELECT COUNT(*) FROM \"User\" WHERE nama_lengkap = @nama_lengkap OR email = @email OR nomor_telepon = @nomor_telepon";
+                using (NpgsqlCommand checkCommand = new NpgsqlCommand(checkQuery, connection))
+                {
+                    checkCommand.Parameters.AddWithValue("nama_lengkap", namaLengkap);
+                    checkCommand.Parameters.AddWithValue("email", email);
+                    checkCommand.Parameters.AddWithValue("nomor_telepon", noHp);
+
+                    int count = Convert.ToInt32(checkCommand.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Data dengan nama, email, atau nomor telepon yang sama sudah ada dalam database.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
                 using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection))
                 {
 
@@ -101,7 +115,7 @@ namespace DesktopApp
                     command.Parameters.AddWithValue("provinsi", provinsi);
                     command.Parameters.AddWithValue("poin", 0);
                     command.Parameters.AddWithValue("status", 0);
-                    command.Parameters.AddWithValue("membership_membership_id", 0);
+                    command.Parameters.AddWithValue("membership_membership_id", 1);
 
                     try
                     {

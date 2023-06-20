@@ -11,7 +11,7 @@ namespace Login_dan_Register_Project_PBO_A
         }
 
         private string generatedCode;
-        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
+        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-Apps";
 
         private void button1_Click(object sender, EventArgs e)
         {

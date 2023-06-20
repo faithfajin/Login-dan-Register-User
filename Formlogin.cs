@@ -14,7 +14,7 @@ namespace DesktopApp
         }
 
         private int userId; // Variabel untuk menyimpan ID pengguna
-        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
+        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-Apps";
         string selectQuery = "SELECT user_id FROM \"User\" WHERE (email = email Or nama_lengkap = nama_lengkap) AND kata_sandi = @kata_sandi";
         private void Formlogin_Load(object sender, EventArgs e)
         {
