@@ -11,7 +11,7 @@ namespace Login_dan_Register_Project_PBO_A
         }
 
         private string generatedCode;
-        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
+        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -61,8 +61,8 @@ namespace Login_dan_Register_Project_PBO_A
                     using (NpgsqlCommand command = new NpgsqlCommand())
                     {
                         command.Connection = connection;
-                        command.CommandText = "SELECT COUNT(*) FROM table_user WHERE username = @username ";
-                        command.Parameters.AddWithValue("@username", username);
+                        command.CommandText = "SELECT COUNT(*) FROM \"User\" WHERE email = @email";
+                        command.Parameters.AddWithValue("@email", username);
                         int count = Convert.ToInt32(command.ExecuteScalar());
 
                         return count > 0; // Mengembalikan true jika username dan kode cocok

@@ -9,11 +9,11 @@ namespace DesktopApp
             InitializeComponent();
         }
 
-        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
+        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
 
 
-        string insertQuery = "INSERT INTO table_user (username, nama_lengkap, email, no_hp, password, kota, provinsi) " +
-                     "VALUES (@username, @nama_lengkap, @email, @no_hp, @password, @kota, @provinsi)";
+        string insertQuery = "INSERT INTO \"User\" (nama_lengkap, email, kata_sandi, nomor_telepon, kota, provinsi, poin, status, membership_membership_id) " +
+                     "VALUES (@nama_lengkap, @email, @kata_sandi, @nomor_telepon, @kota, @provinsi, @poin, @status, @membership_membership_id)";
 
 
 
@@ -48,10 +48,7 @@ namespace DesktopApp
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -75,10 +72,10 @@ namespace DesktopApp
             string password = txtPassword.Text;
             string kota = txtKota.Text;
             string provinsi = txtProvinsi.Text;
-            string username = txtUsernamepilihan.Text;
+
 
             if (string.IsNullOrEmpty(namaLengkap) || string.IsNullOrEmpty(email) ||
-                string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                string.IsNullOrEmpty(noHp) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Harap mengisi semua kolom.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -90,31 +87,21 @@ namespace DesktopApp
                 return;
             }
 
-            if (noHp.Length > 20)
-            {
-                MessageBox.Show("Nomor telepon tidak boleh lebih dari 20 karakter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            int parsedNoHp;
-            if (!int.TryParse(noHp, out parsedNoHp))
-            {
-                MessageBox.Show("Nomor telepon harus berupa angka.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
             using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
             {
                 connection.Open();
                 using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection))
                 {
+
                     command.Parameters.AddWithValue("nama_lengkap", namaLengkap);
                     command.Parameters.AddWithValue("email", email);
-                    command.Parameters.AddWithValue("no_hp", parsedNoHp);
-                    command.Parameters.AddWithValue("password", password);
+                    command.Parameters.AddWithValue("nomor_telepon", noHp);
+                    command.Parameters.AddWithValue("kata_sandi", password);
                     command.Parameters.AddWithValue("kota", kota);
                     command.Parameters.AddWithValue("provinsi", provinsi);
-                    command.Parameters.AddWithValue("username", username);
+                    command.Parameters.AddWithValue("poin", 0);
+                    command.Parameters.AddWithValue("status", 0);
+                    command.Parameters.AddWithValue("membership_membership_id", 0);
 
                     try
                     {
@@ -147,10 +134,7 @@ namespace DesktopApp
         {
         }
 
-        private void txtUsernamepilihan_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {

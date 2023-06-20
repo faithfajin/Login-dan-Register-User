@@ -47,8 +47,6 @@
             txtProvinsi = new TextBox();
             txtKota = new TextBox();
             label11 = new Label();
-            LabelUsername = new Label();
-            txtUsernamepilihan = new TextBox();
             button2 = new Button();
             button4 = new Button();
             button5 = new Button();
@@ -61,7 +59,7 @@
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPassword.Location = new Point(390, 302);
+            txtPassword.Location = new Point(390, 262);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
@@ -74,7 +72,7 @@
             label3.Anchor = AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(389, 277);
+            label3.Location = new Point(389, 237);
             label3.Name = "label3";
             label3.Size = new Size(74, 23);
             label3.TabIndex = 3;
@@ -87,7 +85,7 @@
             txtpassword2.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword2.BorderStyle = BorderStyle.None;
             txtpassword2.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtpassword2.Location = new Point(390, 358);
+            txtpassword2.Location = new Point(390, 318);
             txtpassword2.Multiline = true;
             txtpassword2.Name = "txtpassword2";
             txtpassword2.PasswordChar = '*';
@@ -100,7 +98,7 @@
             textKonfirmasiPassowrd.Anchor = AnchorStyles.Left;
             textKonfirmasiPassowrd.AutoSize = true;
             textKonfirmasiPassowrd.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            textKonfirmasiPassowrd.Location = new Point(389, 332);
+            textKonfirmasiPassowrd.Location = new Point(389, 292);
             textKonfirmasiPassowrd.Name = "textKonfirmasiPassowrd";
             textKonfirmasiPassowrd.Size = new Size(150, 23);
             textKonfirmasiPassowrd.TabIndex = 5;
@@ -116,7 +114,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(390, 515);
+            button1.Location = new Point(390, 475);
             button1.Name = "button1";
             button1.Size = new Size(300, 35);
             button1.TabIndex = 8;
@@ -129,7 +127,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(448, 562);
+            label4.Location = new Point(448, 522);
             label4.Name = "label4";
             label4.Size = new Size(143, 22);
             label4.TabIndex = 10;
@@ -143,7 +141,7 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(55, 163, 165);
-            label5.Location = new Point(593, 562);
+            label5.Location = new Point(593, 522);
             label5.Name = "label5";
             label5.Size = new Size(46, 22);
             label5.TabIndex = 11;
@@ -156,7 +154,7 @@
             txtNama.BackColor = Color.FromArgb(230, 231, 233);
             txtNama.BorderStyle = BorderStyle.None;
             txtNama.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtNama.Location = new Point(390, 92);
+            txtNama.Location = new Point(390, 102);
             txtNama.Multiline = true;
             txtNama.Name = "txtNama";
             txtNama.Size = new Size(300, 28);
@@ -167,7 +165,7 @@
             label7.Anchor = AnchorStyles.Left;
             label7.AutoSize = true;
             label7.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(389, 72);
+            label7.Location = new Point(389, 82);
             label7.Name = "label7";
             label7.Size = new Size(113, 23);
             label7.TabIndex = 13;
@@ -180,7 +178,7 @@
             txtEmail.BackColor = Color.FromArgb(230, 231, 233);
             txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtEmail.Location = new Point(390, 194);
+            txtEmail.Location = new Point(390, 154);
             txtEmail.Multiline = true;
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(300, 28);
@@ -191,7 +189,7 @@
             label8.Anchor = AnchorStyles.Left;
             label8.AutoSize = true;
             label8.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(389, 174);
+            label8.Location = new Point(389, 134);
             label8.Name = "label8";
             label8.Size = new Size(48, 23);
             label8.TabIndex = 15;
@@ -204,7 +202,7 @@
             txtNo.BackColor = Color.FromArgb(230, 231, 233);
             txtNo.BorderStyle = BorderStyle.None;
             txtNo.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtNo.Location = new Point(390, 246);
+            txtNo.Location = new Point(390, 206);
             txtNo.Multiline = true;
             txtNo.Name = "txtNo";
             txtNo.Size = new Size(300, 28);
@@ -216,7 +214,7 @@
             label9.Anchor = AnchorStyles.Left;
             label9.AutoSize = true;
             label9.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(389, 226);
+            label9.Location = new Point(389, 186);
             label9.Name = "label9";
             label9.Size = new Size(49, 23);
             label9.TabIndex = 17;
@@ -227,7 +225,7 @@
             label2.Anchor = AnchorStyles.Left;
             label2.AutoSize = true;
             label2.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(389, 398);
+            label2.Location = new Point(389, 358);
             label2.Name = "label2";
             label2.Size = new Size(63, 23);
             label2.TabIndex = 19;
@@ -239,7 +237,7 @@
             label10.Anchor = AnchorStyles.Left;
             label10.AutoSize = true;
             label10.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(389, 449);
+            label10.Location = new Point(389, 409);
             label10.Name = "label10";
             label10.Size = new Size(41, 23);
             label10.TabIndex = 21;
@@ -251,7 +249,7 @@
             txtProvinsi.BackColor = Color.FromArgb(230, 231, 233);
             txtProvinsi.BorderStyle = BorderStyle.None;
             txtProvinsi.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtProvinsi.Location = new Point(390, 418);
+            txtProvinsi.Location = new Point(390, 378);
             txtProvinsi.Multiline = true;
             txtProvinsi.Name = "txtProvinsi";
             txtProvinsi.Size = new Size(300, 28);
@@ -263,7 +261,7 @@
             txtKota.BackColor = Color.FromArgb(230, 231, 233);
             txtKota.BorderStyle = BorderStyle.None;
             txtKota.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtKota.Location = new Point(390, 469);
+            txtKota.Location = new Point(390, 429);
             txtKota.Multiline = true;
             txtKota.Name = "txtKota";
             txtKota.Size = new Size(300, 28);
@@ -275,35 +273,11 @@
             label11.AutoSize = true;
             label11.Font = new Font("Poppins SemiBold", 23.25F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.FromArgb(55, 163, 165);
-            label11.Location = new Point(379, 22);
+            label11.Location = new Point(379, 29);
             label11.Name = "label11";
             label11.Size = new Size(183, 54);
             label11.TabIndex = 28;
             label11.Text = "Buat Akun";
-            // 
-            // LabelUsername
-            // 
-            LabelUsername.Anchor = AnchorStyles.Left;
-            LabelUsername.AutoSize = true;
-            LabelUsername.Font = new Font("Poppins SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            LabelUsername.Location = new Point(389, 123);
-            LabelUsername.Name = "LabelUsername";
-            LabelUsername.Size = new Size(79, 23);
-            LabelUsername.TabIndex = 29;
-            LabelUsername.Text = "Username";
-            // 
-            // txtUsernamepilihan
-            // 
-            txtUsernamepilihan.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            txtUsernamepilihan.BackColor = Color.FromArgb(230, 231, 233);
-            txtUsernamepilihan.BorderStyle = BorderStyle.None;
-            txtUsernamepilihan.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtUsernamepilihan.Location = new Point(390, 143);
-            txtUsernamepilihan.Multiline = true;
-            txtUsernamepilihan.Name = "txtUsernamepilihan";
-            txtUsernamepilihan.Size = new Size(300, 28);
-            txtUsernamepilihan.TabIndex = 30;
-            txtUsernamepilihan.TextChanged += txtUsernamepilihan_TextChanged;
             // 
             // button2
             // 
@@ -312,7 +286,7 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(662, 302);
+            button2.Location = new Point(662, 262);
             button2.Name = "button2";
             button2.Size = new Size(28, 28);
             button2.TabIndex = 31;
@@ -326,7 +300,7 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(662, 302);
+            button4.Location = new Point(662, 262);
             button4.Name = "button4";
             button4.Size = new Size(28, 28);
             button4.TabIndex = 32;
@@ -340,7 +314,7 @@
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.Location = new Point(662, 358);
+            button5.Location = new Point(662, 318);
             button5.Name = "button5";
             button5.Size = new Size(28, 28);
             button5.TabIndex = 31;
@@ -354,7 +328,7 @@
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(662, 358);
+            button6.Location = new Point(662, 318);
             button6.Name = "button6";
             button6.Size = new Size(28, 28);
             button6.TabIndex = 32;
@@ -372,8 +346,6 @@
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button2);
-            Controls.Add(txtUsernamepilihan);
-            Controls.Add(LabelUsername);
             Controls.Add(label11);
             Controls.Add(txtKota);
             Controls.Add(txtProvinsi);
@@ -423,10 +395,8 @@
         private TextBox txtProvinsi;
         private TextBox txtKota;
         private Label label11;
-        private TextBox txtUsernamepilihan;
         private Label txtUsername;
         private TextBox textUsername;
-        private Label LabelUsername;
         private TextBox textBox2;
         private Button button2;
         private Button button4;

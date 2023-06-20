@@ -5,7 +5,7 @@ namespace Login_dan_Register_Project_PBO_A
 {
     public partial class FormNewPassword : Form
     {
-        private string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=postgres";
+        private string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
         private string username;
         public FormNewPassword()
         {
@@ -27,7 +27,7 @@ namespace Login_dan_Register_Project_PBO_A
                         using (NpgsqlCommand command = new NpgsqlCommand())
                         {
                             command.Connection = connection;
-                            command.CommandText = $"UPDATE table_user SET password = '{password}' WHERE username = '{username}'";
+                            command.CommandText = $"UPDATE \"User\" SET kata_sandi = '{password}' WHERE email = '{username}'";
                             command.ExecuteNonQuery();
                         }
                     }

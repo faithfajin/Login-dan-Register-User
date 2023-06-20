@@ -91,9 +91,9 @@
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(387, 357);
             label2.Name = "label2";
-            label2.Size = new Size(153, 23);
+            label2.Size = new Size(122, 23);
             label2.TabIndex = 29;
-            label2.Text = "Masukkan Username";
+            label2.Text = "Masukkan Email";
             // 
             // label1
             // 

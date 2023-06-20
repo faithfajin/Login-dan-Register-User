@@ -14,8 +14,8 @@ namespace DesktopApp
         }
 
         private int userId; // Variabel untuk menyimpan ID pengguna
-        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
-        string selectQuery = "SELECT id FROM table_user WHERE (email = email Or nama_lengkap = nama_lengkap) AND password = @password";
+        string CnS = "Host=localhost;Port=5432;Username=postgres;Password=faith010304;Database=JT-app";
+        string selectQuery = "SELECT user_id FROM \"User\" WHERE (email = email Or nama_lengkap = nama_lengkap) AND kata_sandi = @kata_sandi";
         private void Formlogin_Load(object sender, EventArgs e)
         {
 
@@ -57,7 +57,7 @@ namespace DesktopApp
 
                     // ngeset parameter values
                     command.Parameters.AddWithValue("email", email);
-                    command.Parameters.AddWithValue("password", password);
+                    command.Parameters.AddWithValue("kata_sandi", password);
 
                     try
                     {

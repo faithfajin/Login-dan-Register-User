@@ -118,9 +118,9 @@
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(393, 227);
             label2.Name = "label2";
-            label2.Size = new Size(43, 22);
+            label2.Size = new Size(139, 22);
             label2.TabIndex = 13;
-            label2.Text = "Email";
+            label2.Text = "Email/Nama lengkap";
             // 
             // label1
             // 
